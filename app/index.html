@@ -1,0 +1,28 @@
+<html ng-app="datapi">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <link rel="stylesheet" href="bower_components/bootstrap-css-only/css/bootstrap.min.css"></link>
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="bower_components/angular-bootstrap/ui-bootstrap-csp.css">
+
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.min.js"></script>
+    <script src="bower_components/angular-route/angular-route.min.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+
+    <script src="app.module.js"></script>
+    <script src="app.route.js"></script>
+
+    <script src="components/home/HomeCtrl.js"></script>
+</head>
+
+<body>
+    <div ng-include="'shared/header.html'"></div>
+    <div ng-view></div>
+</body>
+
+</html>

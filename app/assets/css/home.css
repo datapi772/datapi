@@ -1,0 +1,82 @@
+@media (max-width: 768px) {
+    .carousel-container {
+        height: 40vh !important;
+    }
+    .carousel-caption h1 {
+        font-size: 25px !important;
+    }
+    .carousel-caption h3 {
+        font-size: 18px !important;
+    }
+    .slide-img.tutoring-slide {
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url('../img/tutoring_banner_sm.jpg') !important;
+    }
+    .slide-img.boostik-slide {
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url('../img/boostik_banner_sm.jpg') !important;
+    }
+}
+
+@media (max-width: 1200px) {
+    .carousel-container {
+        height: 60vh !important;
+    }
+    .tutoring-slide {
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url('../img/tutoring_banner_md.jpg') !important;
+    }
+    .boostik-slide {
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url('../img/boostik_banner_md.jpg') !important;
+    }
+    .carousel-caption h1 {
+        font-size: 35px !important;
+    }
+    .carousel-caption h3 {
+        font-size: 20px !important;
+    }
+}
+
+.tutoring-slide {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url('../img/tutoring_banner.jpg');
+}
+
+.litmaster-slide {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url('../img/litmaster_banner.jpg');
+}
+
+.boostik-slide {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url('../img/boostik_banner.jpg');
+}
+
+.carousel-container {
+    height: 70vh;
+}
+
+.carousel-inner .item {
+    height: 100%;
+}
+
+.carousel-inner .item img {
+    min-height: 100%;
+}
+
+.carousel-control {
+    background-image: none !important;
+    width: 10%;
+}
+
+.carousel-caption {
+    bottom: 50%;
+    padding: 0;
+}
+
+.slide-img {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.carousel-caption h1 {
+    font-size: 45px;
+}
