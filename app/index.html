@@ -4,8 +4,10 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
     <link rel="stylesheet" href="bower_components/bootstrap-css-only/css/bootstrap.min.css"></link>
+    <link rel="stylesheet" href="assets/css/app.css">
     <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
     <link rel="stylesheet" href="bower_components/angular-bootstrap/ui-bootstrap-csp.css">
 
     <script src="bower_components/angular/angular.min.js"></script>
@@ -13,16 +15,19 @@
     <script src="bower_components/angular-route/angular-route.min.js"></script>
     <script src="bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
     <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+    <script src="bower_components/ngmap/build/scripts/ng-map.min.js"></script>
 
     <script src="app.module.js"></script>
     <script src="app.route.js"></script>
 
+    <script src="shared/NavCtrl.js"></script>
     <script src="components/home/HomeCtrl.js"></script>
 </head>
 
 <body>
-    <div ng-include="'shared/header.html'"></div>
+    <div ng-include="'shared/Header.html'"></div>
     <div ng-view></div>
+    <div ng-include="'shared/Footer.html'" ng-controller="NavCtrl as nm"></div>
 </body>
 
 </html>
