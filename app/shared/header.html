@@ -11,16 +11,16 @@
         </div>
         <ul class="collapsed-menu" uib-collapse="!isCollapsed">
             <li role="menuitem">
-                <a href="#">Home</a>
+                <a href="/">Home</a>
             </li>
             <li role="menuitem">
-                <a href="#">About</a>
+                <a href="/about">About</a>
             </li>
             <li role="menuitem">
-                <a href="#">Careers</a>
+                <a href="/careers">Careers</a>
             </li>
             <li role="menuitem">
-                <a href="#">Contact</a>
+                <a href="/contact">Contact</a>
             </li>
             <li role="menuitem">
                 <a id="simple-dropdown" role="button" ng-click="isCollapsed2 = !isCollapsed2">Services
@@ -29,42 +29,42 @@
             </li>
             <ul class="collapsed-menu" uib-collapse="!isCollapsed2">
                 <li>
-                    <a href="#">Tutoring</a>
+                    <a href="/tutoring">Tutoring</a>
                 </li>
                 <li>
-                    <a href="#">Poetry Help</a>
+                    <a href="/litmaster">Poetry Help</a>
                 </li>
                 <li>
-                    <a href="#">Worksheets</a>
+                    <a href="/boostik">Worksheets</a>
                 </li>
             </ul>
         </ul>
         <ul class="nav navbar-nav">
             <li role="menuitem">
-                <a href="#">Home</a>
+                <a href="/">Home</a>
             </li>
             <li role="menuitem">
-                <a href="#">About</a>
+                <a href="/about">About</a>
             </li>
             <li role="menuitem">
-                <a href="#">Careers</a>
+                <a href="/careers">Careers</a>
             </li>
             <li role="menuitem">
-                <a href="#">Contact</a>
+                <a href="/contact">Contact</a>
             </li>
-            <li uib-dropdown role="menuitem">
+            <li uib-dropdown is-open="isOpen" role="menuitem" ng-mouseover="isOpen = true">
                 <a id="simple-dropdown" role="button" uib-dropdown-toggle>Services
                     <span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu" uib-dropdown-menu>
                     <li>
-                        <a href="#">Tutoring</a>
+                        <a href="/tutoring">Tutoring</a>
                     </li>
                     <li>
-                        <a href="#">Poetry Help</a>
+                        <a href="/litmaster">Poetry Help</a>
                     </li>
                     <li>
-                        <a href="#">Worksheets</a>
+                        <a href="/boostik">Worksheets</a>
                     </li>
                 </ul>
             </li>

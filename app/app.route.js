@@ -10,4 +10,30 @@ app.config(function($routeProvider, $locationProvider) {
         controllerAs: 'vm'
     })
 
+    .when('/about', {
+        templateUrl: 'components/about/About.html'
+    })
+
+    .when('/careers', {
+        templateUrl: 'components/careers/Careers.html'
+    })
+
+    .when('/contact', {
+        templateUrl: 'components/contact/Contact.html'
+    })
+
+    .when('/tutoring', {
+        templateUrl: 'components/tutoring/Tutoring.html'
+    })
+
+    .when('/litmaster', {
+        templateUrl: 'components/litmaster/Litmaster.html'
+    })
+
+    .when('/boostik', {
+        templateUrl: 'components/boostik/Boostik.html'
+    })
+
+    $locationProvider.html5Mode(true);
+
 })
