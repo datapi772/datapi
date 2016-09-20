@@ -1,13 +1,67 @@
 <div id="home">
-    <div class="carousel-container">
-        <uib-carousel active="0" interval="7000">
-            <uib-slide ng-repeat="slide in vm.slides track by $index" index="$index">
-                <div class="slide-img" ng-class="slide.class"></div>
-                <div class="carousel-caption">
-                    <h1 class="text-uppercase">{{slide.title}}</h1>
-                    <h3>{{slide.subtitle}}</h3>
+    <section>
+        <div class="carousel-container">
+            <uib-carousel active="0" interval="7000">
+                <uib-slide ng-repeat="slide in vm.slides track by $index" index="$index">
+                    <div class="slide-img" ng-class="slide.class"></div>
+                    <div class="carousel-caption">
+                        <h1 class="text-uppercase">{{slide.title}}</h1>
+                        <h3>{{slide.subtitle}}</h3>
+                    </div>
+                </uib-slide>
+            </uib-carousel>
+        </div>
+    </section>
+    <section class="section-container container-blue" id="contact">
+        <div class="row">
+            <div class="col-lg-7">
+                <div map-lazy-load="https://maps.google.com/maps/api/js">
+                    <ng-map center="49.255859, -123.088425" zoom="18">
+                        <marker id="datapi" position="49.255859, -123.088425"></marker>
+                        <info-window visible-on-marker="datapi">
+                            <div>
+                                <h4 class="firstHeading">DataPi Learning Center</h4>
+                                <p>772 Kingsway
+                                    <br>Vancouver, BC, V5V 3C1
+                                    <br>English/Tiếng Việt: (604) 707-0357
+                                    <br>中文: (604) 418-8347
+                                </p>
+                            </div>
+                        </info-window>
+                    </ng-map>
                 </div>
-            </uib-slide>
-        </uib-carousel>
-    </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="text-block padding-top">
+                    <h4>772 Kingsway</h4>
+                    <h4>Vancouver, BC, V5V 3C1</h4>
+                    <h4>admin@datapi.com</h4>
+                    <h3 class="text-uppercase padding-top"><strong>Office hours</strong></h3>
+                    <h4 class="padding-top">Mon to Thu: 12:00 P.M. to 8:00 P.M.</h4>
+                    <h4>Friday: CLOSED</h4>
+                    <h4>Saturday: 9:30 A.M. to 4:00 P.M.</h4>
+                    <h4>Sunday: 11:00 A.M. to 3:00 P.M.</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-container container-orange" id="about">
+        <div class="row">
+            <div class="col-lg-6">
+                <img src="assets/img/success_icon.png" alt="">
+                <img src="assets/img/tutoring_icon.png" alt="">
+                <img src="assets/img/book_icon.png" alt="">
+            </div>
+            <div class="col-lg-6">
+                <p>Since 2000, DataPi has been a trusted and valued tutoring centre within the community. Try our services and see why students travel from out of town just to see us!</p>
+                <p>We are committed to</p>
+                <ul>
+                    <li>Finding talented and passionate tutors.</li>
+                    <li>Developing highly specialized resources dedicated to tutoring.</li>
+                    <li>Training our tutors.</li>
+                    <li>Building a safe, supporting, friendly, and engaging environment for students.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 </div>
