@@ -1,8 +1,10 @@
 var app = angular.module("HomeCtrl", []);
 
-app.controller("HomeCtrl", function () {
+app.controller("HomeCtrl", function (MAP_URL) {
 
     var vm = this;
+
+    vm.mapUrl = MAP_URL;
 
     vm.slides = [
         {

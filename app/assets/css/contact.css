@@ -1,0 +1,135 @@
+@media (max-width: 648px) {
+    #contact .section-container ng-map {
+        height: 40vh !important;
+    }
+    #contact .contact-info-sm {
+        flex-flow: column wrap;
+    }
+    #contact .contact-info-sm .col-xs-6 {
+        width: 100%;
+    }
+    #contact .contact-info-sm h1 {
+        font-size: 24px;
+    }
+    #contact .contact-info-sm h3 {
+        font-size: 16px;
+        margin-top: 0;
+    }
+    #contact .contact-info-sm h4 {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    #contact ng-map {
+        height: 50vh !important;
+    }
+    #contact .contact-info-md {
+        display: none !important;
+    }
+}
+
+@media (max-width: 992px) {
+    #contact .contact-info-md {
+        display: none !important;
+    }
+    #contact .contact-info-sm {
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1em;
+    }
+    #contact .col-md-6 h1 {
+        margin-bottom: 1em !important;
+    }
+    #contact #direction-panel {
+        position: relative !important;
+        right: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+    }
+}
+
+#contact .banner-container {
+    background-image: linear-gradient(to bottom right, rgba(33, 150, 243, 1) 0%, rgba(57, 182, 233, 1) 45%, rgba(77, 208, 225, 1) 75%, rgba(77, 208, 225, 1) 100%);
+    background-size: cover, cover;
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, center;
+}
+
+#contact .section-container {
+    background-color: #f5f5f5;
+}
+
+#contact ng-map {
+    border: 1px solid #333;
+}
+
+#contact ng-map {
+    height: 70vh;
+}
+
+#contact .col-md-6,
+#contact .col-md-4,
+#contact .col-xs-6 {
+    text-align: center;
+}
+
+#contact .col-md-6 h1 {
+    margin-bottom: 1em;
+}
+
+#contact .col-md-4 h4 {
+    margin-top: 1em;
+}
+
+#contact .contact-info-sm {
+    display: none;
+}
+
+#contact #phone img {
+    width: 5%;
+    position: absolute;
+    left: 48%;
+    top: 49%;
+}
+
+#contact #direction-map,
+#contact #index-map {
+    position: relative;
+}
+
+#contact #direction-panel {
+    position: absolute;
+    top: 11;
+    right: 11;
+    height: 50vh;
+    padding: 1em;
+    border-radius: 2px;
+    background-color: rgba(255,255,255,.8);
+    box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 2px 0px;
+    overflow: auto;
+    width: 30%;
+}
+
+#contact #direction-btn {
+    direction: ltr;
+    overflow: hidden;
+    text-align: center;
+    z-index: 2;
+    position: absolute;
+    top: 48;
+    left: 11;
+    color: rgb(0, 0, 0);
+    font-family: Roboto, Arial, sans-serif;
+    -webkit-user-select: none;
+    font-size: 11px;
+    padding: 8px;
+    border-radius: 2px;
+    -webkit-background-clip: padding-box;
+    box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 2px 0px;
+    min-width: 22px;
+    font-weight: 500;
+    background-color: rgb(255, 255, 255);
+    background-clip: padding-box;
+}

@@ -1,5 +1,5 @@
 @media (max-width: 496px) {
-    #home ng-map {
+    #home .section-container div[map-lazy-load] ng-map {
         height: 40vh !important;
     }
     #home .section-container {
@@ -24,7 +24,7 @@
     .slide-img.boostik-slide {
         background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url('../img/boostik_banner_sm.jpg') !important;
     }
-    ng-map {
+    #home div[map-lazy-load] ng-map {
         height: 50vh !important;
     }
     .section-container {
@@ -129,7 +129,7 @@
     text-align: center;
 }
 
-ng-map {
+#home ng-map {
     height: 60vh;
 }
 

@@ -19,7 +19,9 @@ app.config(function($routeProvider, $locationProvider) {
     })
 
     .when('/contact', {
-        templateUrl: 'components/contact/Contact.html'
+        templateUrl: 'components/contact/Contact.html',
+        controller: 'ContactCtrl',
+        controllerAs: 'vm'
     })
 
     .when('/tutoring', {

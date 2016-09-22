@@ -15,7 +15,7 @@
     <section class="section-container container-blue" id="contact">
         <div class="row">
             <div class="col-lg-7">
-                <div map-lazy-load="https://maps.google.com/maps/api/js">
+                <div map-lazy-load="{{vm.mapUrl}}">
                     <ng-map center="49.255859, -123.088425" zoom="18">
                         <marker id="datapi" position="49.255859, -123.088425"></marker>
                         <info-window visible-on-marker="datapi">
