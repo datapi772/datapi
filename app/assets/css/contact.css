@@ -57,10 +57,6 @@
     background-position: center, center;
 }
 
-#contact .section-container {
-    background-color: #f5f5f5;
-}
-
 #contact ng-map {
     border: 1px solid #333;
 }

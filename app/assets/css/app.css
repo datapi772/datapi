@@ -1,3 +1,16 @@
+@media (max-width: 768px) {
+    .section-container {
+        padding: 2em 1em !important;
+    }
+}
+
+@media (max-width: 1200px) {
+    .section-container {
+        padding: 3em !important;
+        font-size: 0.9em !important;
+    }
+}
+
 .padding-top {
     padding-top: 25px;
 }
@@ -18,4 +31,21 @@ div[ng-view] {
     margin: auto;
     color: #ffffff;
     text-shadow: 0 2px 2px rgba(0,0,0,.6);
+}
+
+.section-container {
+    padding: 4em 8em;
+    background-color: #f5f5f5;
+}
+
+.container-blue {
+    background-color: #137cbf;
+}
+
+.container-orange {
+    background-color: #ec8927;
+}
+
+.container-green {
+    background-color: #75b743;
 }
