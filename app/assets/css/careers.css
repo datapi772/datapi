@@ -1,0 +1,128 @@
+@media (max-width: 496px) {
+    #careers .section-container {
+        padding: 1em !important;
+    }
+    #careers .container-fluid {
+        padding: 0 !important;
+    }
+    #careers #careers-text h4 {
+        font-size: 16px !important;
+        text-align: center;
+    }
+    #careers .profile {
+        flex-flow: column wrap !important
+    }
+    #careers .profiles .profile img {
+        width: 40% !important;
+    }
+    #careers .profile .text-block {
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 768px) {
+    #careers #careers-text {
+        padding: 1em !important;
+    }
+    #careers .profiles {
+        flex-flow: column wrap !important;
+    }
+    #careers .profiles img {
+        width: 30% !important;
+    }
+}
+
+@media (max-width: 968px) {
+    #careers .card {
+        min-height: 10em !important;
+        max-height: 10em !important;
+    }
+    #careers .card h2 {
+        font-size: 20px !important;
+    }
+    #careers .profiles {
+        flex-flow: column wrap !important;
+    }
+    #careers .profiles .col-sm-6 {
+        width: 100% !important;
+    }
+    #careers .profiles img {
+        width: 20% !important;
+    }
+}
+
+#careers .banner-container {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url("../img/careers_banner.jpg");
+    background-size: cover, cover;
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, 50% 75%;
+}
+
+#careers .page-header {
+    text-align: center;
+}
+
+#careers .card {
+    box-shadow: rgba(0, 0, 0, 0.3) 0 1px 2px 0;
+    position: relative;
+    max-height: 12em;
+    overflow: hidden;
+}
+
+#careers .card img {
+    width: 100%;
+}
+
+#careers .card .card-image-top {
+    width: 100%;
+}
+
+#careers .card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#careers .card-overlay h2 {
+    color: white;
+    text-align: center;
+}
+
+#careers #careers-text {
+    padding: 3em 5em;
+}
+
+#careers .profiles {
+    display: flex;
+    align-items: center;
+}
+
+#careers .profile {
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;
+    margin-top: 1em;
+}
+
+#careers .profile img {
+    width: 30%;
+    height: auto;
+    border-radius: 200px;
+}
+
+#careers .profile .text-block {
+    margin: 1em;
+    width: 70%;
+}
+
+#careers h5 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+

@@ -1,0 +1,30 @@
+[
+    {
+        "name": "Devon",
+        "degree": "Bachelors of English",
+        "school": "University of British Columbia",
+        "desc": "\"Although I enjoy tutoring, the research and development work was what taught me the most. The rest of the research team are all tutors themselves.   Together we were able to gain a deeper understanding of how students think, and how to best help them. It was so rewarding to see that my work could really make a difference for a struggling student.\"",
+        "img": "assets/img/avatar4.png"
+    },
+    {
+        "name": "Clement Salaun",
+        "degree": "Bachelor of Arts",
+        "school": "Paris Institute of Political Studies",
+        "desc": "\"What I love most about DataPi is how easy it is to find resources. This place really makes an effort to provide comprehensive support materials. It makes my life so much easier, and my students are getting way better marks.\"",
+        "img": "assets/img/avatar1.png"
+    },
+    {
+        "name": "Natasha",
+        "degree": "Bachelor of Science with Honours",
+        "school": "McGill University",
+        "desc": "\"The work environment here is phenomenal.  The staff is friendly and makes me feel right at home, even on my first day of work.  When I have trouble finding materials or figuring out the technology, someone always offers to help!\"",
+        "img": "assets/img/avatar2.png"
+    },
+    {
+        "name": "Catherine Tsai",
+        "degree": "Bachelor of Science",
+        "school": "Electrical Engineering",
+        "desc": "\"Tutoring at DataPi was perfect for me as a full-time university student.  Their flexible work hours let me create a schedule for myself that wasn’t too busy, so I could keep up with my studies while working part time.  I chose to tutor topics that related to my major, so I was practically being paid to review the basics!\"",
+        "img": "assets/img/avatar3.png"
+    }
+]

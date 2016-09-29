@@ -1,0 +1,63 @@
+<div id="careers" ng-init="vm.loadTestimonials()">
+    <section class="banner-container">
+        <h1 class="text-uppercase">Careers</h1>
+    </section>
+    <div class="section-container">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="card">
+                        <img src="assets/img/careers_innovation.jpg" alt="">
+                        <div class="card-overlay">
+                            <h2 class="text-uppercase">Innovative</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <img src="assets/img/careers_time.jpg" alt="">
+                        <div class="card-overlay">
+                            <h2 class="text-uppercase">Flexible Hours</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <img src="assets/img/careers_teamwork.jpg" alt="">
+                        <div class="card-overlay">
+                            <h2 class="text-uppercase">Friendly Work Environment</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="careers-text">
+                <h4>We are always looking for people passionate about transferring knowledge. At DataPi, we pride ourselves in our ability to quickly adapt to our students’ shifting needs and curricula changes. Come teach with us in a fast-paced environment that is both challenging and rewarding! </h4>
+            </div>
+            <div class="page-header">
+                <h1>Testimonials</h1>
+            </div>
+            <div class="row profiles" ng-repeat="t in vm.testimonials | limitTo:vm.testimonials.length/2">
+                <div class="col-sm-6">
+                    <div class="profile">
+                        <img src="{{vm.testimonials[$index*2].img}}" alt="">
+                        <div class="text-block">
+                            <h5><strong>{{vm.testimonials[$index*2].degree}}</strong></h5>
+                            <h5><strong>{{vm.testimonials[$index*2].school}}</strong></h5>
+                            <p>{{vm.testimonials[$index*2].desc}}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="profile">
+                        <img src="{{vm.testimonials[$index*2+1].img}}" alt="">
+                        <div class="text-block">
+                            <h5><strong>{{vm.testimonials[$index*2+1].degree}}</strong></h5>
+                            <h5><strong>{{vm.testimonials[$index*2+1].school}}</strong></h5>
+                            <p>{{vm.testimonials[$index*2+1].desc}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

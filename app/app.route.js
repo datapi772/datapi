@@ -15,7 +15,9 @@ app.config(function($routeProvider, $locationProvider) {
     })
 
     .when('/careers', {
-        templateUrl: 'components/careers/Careers.html'
+        templateUrl: 'components/careers/Careers.html',
+        controller: 'CareersCtrl',
+        controllerAs: 'vm'
     })
 
     .when('/contact', {
