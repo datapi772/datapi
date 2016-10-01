@@ -2,7 +2,7 @@
     <section class="banner-container">
         <h1 class="text-uppercase">Careers</h1>
     </section>
-    <div class="section-container">
+    <section class="section-container">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-4">
@@ -36,8 +36,8 @@
             <div class="page-header">
                 <h1>Testimonials</h1>
             </div>
-            <div class="row profiles" ng-repeat="t in vm.testimonials | limitTo:vm.testimonials.length/2">
-                <div class="col-sm-6">
+            <div class="row profiles" ng-repeat="t in vm.testimonials | limitTo:(vm.testimonials.length+1)/2">
+                <div class="col-sm-6" ng-show="vm.testimonials[$index*2]">
                     <div class="profile">
                         <img src="{{vm.testimonials[$index*2].img}}" alt="">
                         <div class="text-block">
@@ -47,7 +47,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-6" ng-show="vm.testimonials[$index*2+1]">
                     <div class="profile">
                         <img src="{{vm.testimonials[$index*2+1].img}}" alt="">
                         <div class="text-block">
@@ -59,5 +59,5 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 </div>
