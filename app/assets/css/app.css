@@ -1,6 +1,45 @@
+@media (max-width: 496px) {
+    .section-container .video-frame {
+        height: 40vh !important;
+    }
+    .profile {
+        flex-flow: column wrap !important
+    }
+    .profiles .profile img {
+        width: 40% !important;
+    }
+    .profile .text-block {
+        width: 100% !important;
+    }
+}
+
 @media (max-width: 768px) {
     .section-container {
         padding: 2em 1em !important;
+    }
+    .profiles {
+        flex-flow: column wrap !important;
+    }
+    .profiles img {
+        width: 30% !important;
+    }
+}
+
+@media (max-width: 992px) {
+    .video-frame iframe {
+        width: 100% !important;
+    }
+    .video-frame {
+        height: 60vh !important;
+    }
+    .profiles {
+        flex-flow: column wrap !important;
+    }
+    .profiles .col-sm-6 {
+        width: 100% !important;
+    }
+    .profiles img {
+        width: 20% !important;
     }
 }
 
@@ -48,4 +87,39 @@ div[ng-view] {
 
 .container-green {
     background-color: #75b743;
+}
+
+.video-frame {
+    text-align: center;
+    height: 60vh;
+}
+
+.video-frame iframe {
+    width: 70%;
+    height: 100%;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 2px 0px;
+}
+
+.profiles {
+    display: flex;
+    align-items: center;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;
+    margin-top: 1em;
+}
+
+.profile img {
+    width: 30%;
+    height: auto;
+    border-radius: 200px;
+}
+
+.profile .text-block {
+    margin: 1em;
+    width: 70%;
 }

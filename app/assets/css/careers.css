@@ -9,26 +9,11 @@
         font-size: 16px !important;
         text-align: center;
     }
-    #careers .profile {
-        flex-flow: column wrap !important
-    }
-    #careers .profiles .profile img {
-        width: 40% !important;
-    }
-    #careers .profile .text-block {
-        width: 100% !important;
-    }
 }
 
 @media (max-width: 768px) {
     #careers #careers-text {
         padding: 1em !important;
-    }
-    #careers .profiles {
-        flex-flow: column wrap !important;
-    }
-    #careers .profiles img {
-        width: 30% !important;
     }
 }
 
@@ -39,15 +24,6 @@
     }
     #careers .card h2 {
         font-size: 20px !important;
-    }
-    #careers .profiles {
-        flex-flow: column wrap !important;
-    }
-    #careers .profiles .col-sm-6 {
-        width: 100% !important;
-    }
-    #careers .profiles img {
-        width: 20% !important;
     }
 }
 
@@ -96,29 +72,6 @@
 
 #careers #careers-text {
     padding: 3em 5em;
-}
-
-#careers .profiles {
-    display: flex;
-    align-items: center;
-}
-
-#careers .profile {
-    display: flex;
-    align-items: center;
-    flex-flow: row nowrap;
-    margin-top: 1em;
-}
-
-#careers .profile img {
-    width: 30%;
-    height: auto;
-    border-radius: 200px;
-}
-
-#careers .profile .text-block {
-    margin: 1em;
-    width: 70%;
 }
 
 #careers h5 {
