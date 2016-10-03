@@ -1,0 +1,68 @@
+<div id="litmaster" ng-init="vm.loadTestimonials()">
+    <section class="banner-container">
+        <h1 class="text-uppercase">Litmaster</h1>
+    </section>
+    <section class="section-container text-center">
+        <h1>Need help with poetry?</h1>
+        <button class="btn lit-btn"><a href="http://litmaster2.boostik.com">Try Litmaster now!</a></button>
+    </section>
+    <section class="section-container">
+        <div class="video-frame">
+            <iframe width="787" height="445" src="https://www.youtube.com/embed/dO3SmIoFeu8" frameborder="0" allowfullscreen align="middle"></iframe>
+        </div>
+    </section>
+    <section class="container-fluid container-green">
+        <div class="info-container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="img-block">
+                        <h4 class="text-uppercase">Be test-ready quickly</h4>
+                        <img src="assets/img/litmaster_time.png" alt="">
+                        <p>Skip long hours of review. Go from novice to expert in record time.</p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="img-block">
+                        <h4 class="text-uppercase">Master the basics</h4>
+                        <img src="assets/img/litmaster_master.png" alt="">
+                        <p>Build a strong foundation that enables success even in today's competitive post-secondary environment.</p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="img-block">
+                        <h4 class="text-uppercase">Learn anywhere</h4>
+                        <img src="assets/img/litmaster_house.png" alt="">
+                        <p>Sharpen your language art skills at home, at school, or on the go with the Litmaster online app.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-container">
+        <div class="container-fluid">
+            <div class="page-header">
+                <h1>What the students are saying</h1>
+            </div>
+            <div class="row profiles" ng-repeat="t in vm.students | limitTo:(vm.students.length+1)/2">
+                <div class="col-sm-6" ng-show="vm.students[$index*2]">
+                    <div class="profile">
+                        <img src="{{vm.students[$index*2].img}}" alt="">
+                        <div class="text-block">
+                            <h4><strong>{{vm.students[$index*2].name}}</strong></h4>
+                            <p>{{vm.students[$index*2].desc}}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6" ng-show="vm.students[$index*2+1]">
+                    <div class="profile">
+                        <img src="{{vm.students[$index*2+1].img}}" alt="">
+                        <div class="text-block">
+                            <h4><strong>{{vm.students[$index*2+1].name}}</strong></h4>
+                            <p>{{vm.students[$index*2+1].desc}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

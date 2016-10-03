@@ -31,7 +31,9 @@ app.config(function($routeProvider, $locationProvider) {
     })
 
     .when('/litmaster', {
-        templateUrl: 'components/litmaster/Litmaster.html'
+        templateUrl: 'components/litmaster/Litmaster.html',
+        controller: 'LitmasterCtrl',
+        controllerAs: 'vm'
     })
 
     .when('/boostik', {

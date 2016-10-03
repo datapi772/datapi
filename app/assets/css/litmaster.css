@@ -1,0 +1,76 @@
+@media (max-width: 768px) {
+    #litmaster .img-block {
+        margin-top: 3em;
+    }
+    #litmaster .info-container .col-sm-4:first-child .img-block {
+        margin-top: 0 !important;
+    }
+    #litmaster .img-block img {
+        height: 20% !important;
+    }
+}
+
+@media (max-width: 992px) {
+    #litmaster .info-container {
+        padding: 4em 4em !important;
+    }
+}
+
+#litmaster .banner-container {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url("../img/litmaster_banner_5.jpg");
+    background-size: cover, cover;
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, 50% 75%;
+}
+
+#litmaster .info-container {
+    padding: 4em 10em;
+}
+
+#litmaster .img-block {
+    text-align: center;
+    display: block;
+    padding: 0 1em;
+}
+
+#litmaster .img-block h4 {
+    color: white;
+    font-weight: 500;
+}
+
+#litmaster .img-block img {
+    height: 15%;
+    margin: 1em 0 2em 0;
+}
+
+#litmaster .img-block p {
+    color: white;
+}
+
+#litmaster .lit-btn {
+    padding: 12px 20px ;
+    background-color: #75b743;
+    color: white;
+    font-size: 16px;
+    box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.3);
+}
+
+#litmaster .lit-btn:hover {
+    background-color: yellow;
+}
+
+#litmaster .lit-btn:hover a {
+    color: #333;
+}
+
+#litmaster .lit-btn a {
+    color: white;
+}
+
+#litmaster .lit-btn a:hover {
+    text-decoration: none;
+}
+
+#litmaster .lit-btn a:visited {
+    color: white`;
+}
