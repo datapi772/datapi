@@ -4,7 +4,8 @@
     </section>
     <section class="section-container">
         <div class="video-frame">
-            <iframe src="https://www.youtube.com/embed/ZgQ2ib7iUE4?wmode=opaque" frameborder="0" allowfullscreen align="middle"></iframe>
+            <div class="video-overlay" ng-hide="vm.hideOverlay" ng-click="vm.hideOverlay = !vm.hideOverlay"></div>
+            <iframe src="https://www.youtube.com/embed/ZgQ2ib7iUE4?autoplay=1" frameborder="0" allowfullscreen align="middle" ng-if="vm.hideOverlay"></iframe>
         </div>
         <div class="container" id="about-text">
             DataPi's new recruits have the opportunity to be exceptional at what they do. DataPi addresses the shortage of skilled tutors or teachers by transforming inexperienced recruits into exceptional educators. We strive to enable parents to become excellent homework helpers, as well.
