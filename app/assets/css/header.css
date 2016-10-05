@@ -1,3 +1,23 @@
+@media (max-width: 320px) {
+    .navbar-logo {
+        visibility: hidden !important;
+    }
+    .show-xxs {
+        display: block !important;
+    }
+    .navbar-brand {
+        font-size: 32px;
+        margin: 0.5em;
+    }
+}
+
+@media (max-width: 496px) {
+    .navbar-logo {
+        padding-top: 0.5em;
+        height: 4.5em !important;
+    }
+}
+
 @media (max-width: 768px) {
     .navbar-nav {
         display: none;
@@ -17,6 +37,10 @@
     .navbar-nav .dropdown-menu {
         left: -42%;
     }
+}
+
+.show-xxs {
+    display: none;
 }
 
 .navbar {
