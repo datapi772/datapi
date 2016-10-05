@@ -46,3 +46,7 @@
 #litmaster .lit-btn a:visited {
     color: white`;
 }
+
+#litmaster .video-overlay {
+    background-image: url("../img/play_button_sm.png"), linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url("../img/litmaster_video.jpg");
+}
