@@ -1,0 +1,43 @@
+@media (max-width: 496px) {
+    h1 {
+        font-size: 24px !important;
+    }
+    h3 {
+        font-size: 18px !important;
+    }
+    h4 {
+        font-size: 15px !important;
+    }
+}
+
+@media (max-width: 786px) {
+    #boostik .section-container img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1200px) {
+    #boostik.img-block img {
+        width: 100% !important;
+        height: auto !important;
+    }
+}
+
+#boostik .banner-container {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url("../img/boostik_banner_2.jpg");
+    background-size: cover, cover;
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, top;
+}
+
+#boostik .section-container {
+    background-color: #ffffff;
+}
+
+#boostik .video-frame {
+    margin-top: 3em;
+}
+
+#boostik .video-overlay {
+    background-image: url("../img/play_button_sm.png"), linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url("../img/boostik_video.jpg");
+}

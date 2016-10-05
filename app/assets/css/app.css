@@ -1,6 +1,9 @@
 @media (max-width: 496px) {
+    section.section-container {
+        padding: 1em !important;
+    }
     .section-container .video-frame {
-        height: 40vh !important;
+        height: 20em !important;
     }
     .profile {
         flex-flow: column wrap !important
@@ -11,8 +14,12 @@
     .profile .text-block {
         width: 100% !important;
     }
-    h1 {
-        font-size: 24px !important;
+    .container-fluid .info-container {
+        padding: 3em 0em !important;
+    }
+    .info-container .img-block img {
+        width: 70% !important;
+        height: auto !important;
     }
 }
 
@@ -26,14 +33,24 @@
     .profiles img {
         width: 30% !important;
     }
+    .img-block {
+        margin-top: 3em;
+    }
+    .info-container .col-sm-4:first-child .img-block,
+    .info-container .col-sm-6:first-child .img-block {
+        margin-top: 0 !important;
+    }
+    .info-container .img-block {
+        padding: 0;
+    }
+    .img-block img {
+        height: 20% !important;
+    }
 }
 
 @media (max-width: 992px) {
-    .video-frame iframe {
-        width: 100% !important;
-    }
     .video-frame {
-        height: 60vh !important;
+        height: 40em !important;
     }
     .profiles {
         flex-flow: column wrap !important;
@@ -43,6 +60,9 @@
     }
     .profiles img {
         width: 20% !important;
+    }
+    .info-container {
+        padding: 4em 4em !important;
     }
 }
 
@@ -72,7 +92,7 @@ div[ng-view] {
 .banner-container h1 {
     margin: auto;
     color: #ffffff;
-    text-shadow: 0 2px 2px rgba(0,0,0,.6);
+    text-shadow: 0 2px 2px rgba(0, 0, 0, .6);
 }
 
 .section-container {
@@ -94,12 +114,13 @@ div[ng-view] {
 
 .video-frame {
     text-align: center;
-    height: 60vh;
+    height: 50em;
+    position: relative;
 }
 
 .video-frame iframe {
-    width: 70%;
     height: 100%;
+    width: 100%;
     position: relative;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 2px 0px;
 }
@@ -125,4 +146,42 @@ div[ng-view] {
 .profile .text-block {
     margin: 1em;
     width: 70%;
+}
+
+.info-container {
+    padding: 4em 10em;
+}
+
+.img-block {
+    text-align: center;
+    display: block;
+    padding: 0 1em;
+}
+
+.img-block h4 {
+    color: white;
+    font-weight: 500;
+}
+
+.img-block img {
+    height: 15%;
+    margin: 1em 0 2em 0;
+}
+
+.img-block p {
+    color: white;
+}
+
+.video-overlay {
+    width: 100%;
+    position: absolute;
+    cursor: pointer;
+    background-size: 10%, cover, cover;
+    background-position: center, center, center;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    left: 0;
+    top: 0;
+    height: 100%;
+    z-index: 200;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.6);
 }
