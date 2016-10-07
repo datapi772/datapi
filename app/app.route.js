@@ -37,7 +37,9 @@ app.config(function($routeProvider, $locationProvider) {
     })
 
     .when('/boostik', {
-        templateUrl: 'components/boostik/Boostik.html'
+        templateUrl: 'components/boostik/Boostik.html',
+        controller: 'BoostikCtrl',
+        controllerAs: 'vm'
     })
 
     $locationProvider.html5Mode(true);

@@ -1,11 +1,12 @@
-<div id="boostik">
+<div id="boostik" ng-init="vm.initSlides()">
     <section class="banner-container">
         <h1 class="text-uppercase">Boostik</h1>
     </section>
     <section class="section-container text-center">
         <h4>Boostik worksheets are minute-math-like exercises that guarantee learning retention. Boostik has topics in English, Math, and Science for all levels.</h4>
-        <h3>Call <a href="tel:+16047070357">(604) 707-0357</a> or email <a href="mailto:free_trial@datapi.com">free_trial@datapi.com</a> for a free trial.</h3>
+        <button class="btn boost-btn" ng-click="vm.goToWorksheets()"><i class="caret"></i>&nbspWorksheet Samples Below&nbsp<i class="caret"></i></button>
         <img src="assets/img/boostik_logo.png" alt="">
+        <h3>Call <a href="tel:+16047070357">(604) 707-0357</a> or email <a href="mailto:free_trial@datapi.com">free_trial@datapi.com</a> for a free trial.</h3>
         <div class="video-frame">
             <div class="video-overlay" ng-hide="vm.hideOverlay" ng-click="vm.hideOverlay = !vm.hideOverlay"></div>
             <iframe src="https://www.youtube.com/embed/q8byZ5t0jAQ?autoplay=1" frameborder="0" allowfullscreen align="middle" ng-if="vm.hideOverlay"></iframe>
@@ -29,6 +30,13 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+    <section class="section-container" id="worksheets">
+        <div class="preview-slides" ng-swipe-left="vm.nextSlide()" ng-swipe-right="vm.prevSlide()">
+            <button class="slides-nav" ng-click="vm.prevSlide()"><i class="glyphicon glyphicon-chevron-left"></i></button>
+            <img src="{{p}}" ng-repeat="p in vm.activeSlides track by $index">
+            <button class="slides-nav" ng-click="vm.nextSlide()"><i class="glyphicon glyphicon-chevron-right"></i></button>
         </div>
     </section>
 </div>

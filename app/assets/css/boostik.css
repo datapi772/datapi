@@ -8,11 +8,17 @@
     h4 {
         font-size: 15px !important;
     }
+    #boostik .section-container .preview-slides img {
+        width: 75% !important;
+    }
 }
 
 @media (max-width: 786px) {
     #boostik .section-container img {
         width: 100%;
+    }
+    #boostik .preview-slides img {
+        width: 50% !important;
     }
 }
 
@@ -40,4 +46,60 @@
 
 #boostik .video-overlay {
     background-image: url("../img/play_button_sm.png"), linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url("../img/boostik_video.jpg");
+}
+
+#boostik .preview-slides {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#boostik .preview-slides img {
+    width: 25%;
+    margin: 0 1em;
+    pointer-events: none;
+}
+
+#boostik .preview-slides .slides-nav {
+    background-color: transparent;
+    padding: 0.45em 0.65em 0.75em 0.65em;
+    border: 0;
+    border-radius: 100px;
+}
+
+#boostik .preview-slides .slides-nav i {
+    font-size: 24px;
+}
+
+#boostik .preview-slides .slides-nav:focus {
+    outline: 0;
+}
+
+#boostik .preview-slides .slides-nav:hover {
+    background-color: #137cbf;
+    outline: 0;
+    color: white;
+}
+
+#boostik .boost-btn {
+    padding: 12px 20px ;
+    background-color: transparent;
+    color: #333;
+    font-size: 16px;
+    display: block;
+    text-align: center;
+    margin: auto;
+}
+
+#boostik .boost-btn:hover {
+    font-weight: 600;
+}
+
+#boostik .boost-btn:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+#boostik .boost-btn a:visited {
+    color: white;
 }
