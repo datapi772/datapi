@@ -1,21 +1,29 @@
 @media (max-width: 496px) {
     #home .section-container div[map-lazy-load] ng-map {
-        height: 40vh !important;
+        height: 30vh !important;
     }
     #home .section-container {
-        padding: 1em !important;
         font-size: 0.8em !important;
+    }
+    #home .carousel-container .carousel-caption h1 {
+        font-size: 22px !important;
+    }
+    #home .carousel-container .carousel-caption h3 {
+        font-size: 15px !important;
     }
 }
 
 @media (max-width: 768px) {
-    .carousel-container {
+    #home .carousel-container {
         height: 40vh !important;
     }
-    .carousel-caption h1 {
+    #home .carousel-container .carousel-caption {
+        bottom: 40% !important;
+    }
+    #home .carousel-container h1 {
         font-size: 25px !important;
     }
-    .carousel-caption h3 {
+    #home .carousel-container h3 {
         font-size: 18px !important;
     }
     .slide-img.tutoring-slide {
@@ -23,6 +31,9 @@
     }
     .slide-img.boostik-slide {
         background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url('../img/boostik_banner_sm.jpg') !important;
+    }
+    #home .section-container {
+        padding: 1em !important;
     }
     #home div[map-lazy-load] ng-map {
         height: 50vh !important;
