@@ -1,6 +1,6 @@
 var app = angular.module("datapi");
 
-app.config(function($routeProvider, $locationProvider) {
+app.config(function($routeProvider, $locationProvider, $translateProvider) {
 
     $routeProvider
 
@@ -40,7 +40,15 @@ app.config(function($routeProvider, $locationProvider) {
         templateUrl: 'components/boostik/Boostik.html',
         controller: 'BoostikCtrl',
         controllerAs: 'vm'
+    });
+
+    $translateProvider.useStaticFilesLoader({
+        prefix: "assets/languages/locale-",
+        suffix: ".json"
     })
+
+    $translateProvider.preferredLanguage('en');
+    $translateProvider.useSanitizeValueStrategy('escape');
 
     $locationProvider.html5Mode(true);
 

@@ -24,11 +24,14 @@
     <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
     <script src="bower_components/ngmap/build/scripts/ng-map.min.js"></script>
     <script src="bower_components/angular-touch/angular-touch.min.js"></script>
+    <script src="bower_components/angular-translate/angular-translate.min.js"></script>
+    <script src="bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.min.js"></script>
 
     <script src="app.module.js"></script>
     <script src="app.route.js"></script>
 
-    <script src="shared/NavCtrl.js"></script>
+    <script src="shared/HeaderCtrl.js"></script>
+    <script src="shared/FooterCtrl.js"></script>
     <script src="components/home/HomeCtrl.js"></script>
     <script src="components/contact/ContactCtrl.js"></script>
     <script src="components/careers/CareersCtrl.js"></script>
@@ -39,9 +42,9 @@
 </head>
 
 <body>
-    <div ng-include="'shared/Header.html'"></div>
+    <div ng-include="'shared/Header.html'" ng-controller="HeaderCtrl as hm"></div>
     <div ng-view></div>
-    <div ng-include="'shared/Footer.html'" ng-controller="NavCtrl as nm"></div>
+    <div ng-include="'shared/Footer.html'" ng-controller="FooterCtrl as nm"></div>
 </body>
 
 </html>

@@ -62,6 +62,9 @@
     #about .row {
         padding: 2em !important;
     }
+    #home #about .col-lg-6 img {
+        width: 25% !important;
+    }
 }
 
 .tutoring-slide {
@@ -120,23 +123,18 @@
     height: 60vh;
 }
 
-#about .row {
+#home #about .row {
     display: flex;
     align-items: center;
     flex-flow: row wrap;
     padding: 5em;
 }
 
-#about .col-lg-6 {
-    font-size: 1.2em;
-}
-
-#about .col-lg-6:first-child {
+#home #about .col-lg-6:first-child {
     text-align: center;
 }
 
-#about .col-lg-6 img {
+#home #about .col-lg-6 img {
     width: 30%;
     margin-bottom: 1em;
 }
-

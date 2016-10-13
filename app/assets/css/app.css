@@ -71,6 +71,9 @@
         padding: 3em !important;
         font-size: 0.9em !important;
     }
+    div[ng-view] {
+        padding-top: 5em !important;
+    }
 }
 
 .padding-top {

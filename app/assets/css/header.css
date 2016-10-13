@@ -1,13 +1,13 @@
 @media (max-width: 320px) {
     .navbar-logo {
-        visibility: hidden !important;
+        display: none !important;
     }
     .show-xxs {
         display: block !important;
     }
     .navbar-brand {
         font-size: 32px;
-        margin: 0.5em;
+        margin: 0.3em;
     }
 }
 
@@ -15,6 +15,15 @@
     .navbar-logo {
         padding-top: 0.5em;
         height: 4.5em !important;
+    }
+    #languages {
+        display: none !important;
+    }
+    #collapsed-languages {
+        display: block !important;
+    }
+    .collapsed-menu li {
+        text-align: center;
     }
 }
 
@@ -25,17 +34,45 @@
     .navbar-logo {
         margin-left: 20px !important;
     }
+    #languages {
+        display: block;
+        margin: 0;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .collapsed-menu {
+        display: none !important;
+    }
 }
 
 @media (max-width: 1200px) {
+    .navbar {
+        height: 5em !important;
+    }
     .navbar .container-fluid {
         padding: 0 !important;
     }
     .navbar-nav {
         float: right !important;
     }
-    .navbar-nav .dropdown-menu {
-        left: -42%;
+    .navbar-nav #services-dropdown .dropdown-menu {
+        left: -55%;
+    }
+    .navbar-logo {
+        padding-top: 0em;
+        height: 4em !important;
+    }
+    .navbar .navbar-nav li a {
+        padding: 25px 10px;
+    }
+    .navbar #languages-dropdown button {
+        margin: 18px 5px;
+    }
+    .navbar #languages-dropdown .dropdown-menu {
+        left: 0% !important;
+        right: -25%;
     }
 }
 
@@ -61,8 +98,23 @@
     margin: 0.5em;
 }
 
-.navbar .dropdown-menu li a {
+.navbar-toggle {
+    margin-top: 18px !important;
+}
+
+.navbar #services-dropdown .dropdown-menu li a {
     padding: 10px 20px;
+}
+
+.navbar #languages-dropdown .dropdown-menu {
+    top: 70%;
+    left: 10%;
+    min-width: 100px;
+    max-width: 100px;
+}
+
+.navbar #languages-dropdown .dropdown-menu li a {
+    padding: 5px 10px;
 }
 
 .navbar-nav {
@@ -78,6 +130,10 @@
 .navbar-nav li a:hover {
     background-color: #187fc0 !important;
     color: #ffffff !important;
+}
+
+#languages-dropdown button {
+    margin: 25px 10px;
 }
 
 .navbar-toggle {
@@ -104,7 +160,7 @@
 }
 
 .collapsed-menu li a {
-    padding: 1em 2em;
+    padding: 1em 1em;
     display: block;
     text-decoration: none;
     color: #333;
@@ -112,5 +168,27 @@
 
 .collapsed-menu .collapsed-menu {
     margin: 0;
-    border-top: 1px solid rgba(0,0,0,0.3);
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.collapsed-menu .btn-group-justified a {
+    padding: 0.5em 0;
+    border-radius: 0;
+    border: 0;
+}
+
+#collapsed-languages:hover a {
+    background-color: transparent !important;
+    color: #333 !important;
+    font-weight: 300;
+}
+
+#collapsed-languages a:hover {
+    background-color: #187fc0 !important;
+    color: #ffffff !important;
+}
+
+#collapsed-languages {
+    display: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
 }
