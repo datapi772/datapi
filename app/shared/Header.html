@@ -10,7 +10,7 @@
             <div class="navbar-brand show-xxs">DataPi</div>
             <img class="navbar-logo" src="assets/img/logo.png">
             <ul class="nav navbar-nav navbar-right" id="languages">
-                <div id="languages-dropdown" class="hidden-lg hidden-md hidden-sm" uib-dropdown keyboard-nav>
+                <div id="languages-dropdown" class="hidden-lg hidden-md hidden-sm" uib-dropdown is-open="hm.isOpen3" keyboard-nav>
                     <button class="btn btn-default" uib-dropdown-toggle>{{hm.currentLanguage}} <i class="caret"></i></button>
                     <ul uib-dropdown-menu role="menu">
                         <li ng-repeat="l in hm.languages"><a href="" ng-click="hm.changeLanguage(l)">{{l.lang}}</a></li>
@@ -18,7 +18,7 @@
                 </div>
             </ul>
         </div>
-        <ul class="collapsed-menu" uib-collapse="!hm.isCollapsed">
+        <ul class="collapsed-menu" uib-collapse="hm.isCollapsed">
             <li role="menuitem">
                 <a href="/" ng-click="hm.isCollapsed = !hm.isCollapsed">Home</a>
             </li>
@@ -36,7 +36,7 @@
                     <span class="caret"></span>
                 </a>
             </li>
-            <ul class="collapsed-menu" uib-collapse="!hm.isCollapsed2">
+            <ul class="collapsed-menu" uib-collapse="hm.isCollapsed2">
                 <li>
                     <a href="/tutoring" ng-click="hm.isCollapsed = !hm.isCollapsed">Tutoring</a>
                 </li>
@@ -54,7 +54,7 @@
             </li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-            <li id="languages-dropdown" uib-dropdown keyboard-nav>
+            <li id="languages-dropdown" uib-dropdown is-open="hm.isOpen2" keyboard-nav>
                 <button class="btn btn-default" uib-dropdown-toggle>{{hm.currentLanguage}} <i class="caret"></i></button>
                 <ul uib-dropdown-menu role="menu">
                     <li ng-repeat="l in hm.languages"><a href="" ng-click="hm.changeLanguage(l)">{{l.lang}}</a></li>
@@ -74,7 +74,7 @@
             <li role="menuitem">
                 <a href="/contact">Contact</a>
             </li>
-            <li id="services-dropdown" uib-dropdown is-open="isOpen" role="menuitem" ng-mouseover="isOpen = true">
+            <li id="services-dropdown" uib-dropdown is-open="hm.isOpen" role="menuitem" ng-mouseover="hm.isOpen = true">
                 <a id="simple-dropdown" role="button" uib-dropdown-toggle>Services
                     <span class="caret"></span>
                 </a>

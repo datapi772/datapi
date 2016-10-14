@@ -4,6 +4,10 @@ app.controller("HeaderCtrl", function ($translate) {
 
     var hm = this;
     hm.isCollapsed = true;
+    hm.isCollapsed2 = true;
+    hm.isOpen = false;
+    hm.isOpen1 = false;
+    hm.isOpen2 = false;
     hm.currentLanguage = "Eng";
 
     hm.languages = [
