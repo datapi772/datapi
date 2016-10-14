@@ -10,6 +10,7 @@
     }
     .profiles .profile img {
         width: 40% !important;
+        margin-right: 0 !important;
     }
     .profile .text-block {
         width: 100% !important;
@@ -43,9 +44,6 @@
     .info-container .img-block {
         padding: 0;
     }
-    .img-block img {
-        height: 20% !important;
-    }
 }
 
 @media (max-width: 992px) {
@@ -60,9 +58,13 @@
     }
     .profiles img {
         width: 20% !important;
+        margin-right: 1em;
     }
     .info-container {
         padding: 4em 4em !important;
+    }
+    .img-block img {
+        height: 10% !important;
     }
 }
 
