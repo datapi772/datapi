@@ -38,6 +38,9 @@
         display: block;
         margin: 0;
     }
+    .nav #languages-dropdown {
+        margin-right: 0 !important;
+    }
 }
 
 @media (min-width: 768px) {
@@ -65,6 +68,9 @@
     }
     .navbar .navbar-nav li a {
         padding: 25px 10px;
+    }
+    #languages-dropdown {
+        margin-right: 1em;
     }
     .navbar #languages-dropdown button {
         margin: 18px 5px;
