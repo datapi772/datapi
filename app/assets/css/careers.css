@@ -5,15 +5,14 @@
     #careers .container-fluid {
         padding: 0 !important;
     }
-    #careers #careers-text h4 {
-        font-size: 16px !important;
-        text-align: center;
-    }
 }
 
 @media (max-width: 768px) {
     #careers #careers-text {
         padding: 1em !important;
+    }
+    #careers #careers-text h4 {
+        font-size: 1em !important;
     }
 }
 
@@ -24,6 +23,9 @@
     }
     #careers .card h2 {
         font-size: 20px !important;
+    }
+    #careers #careers-text h4 {
+        font-size: 1.2em !important;
     }
 }
 
@@ -72,6 +74,7 @@
 
 #careers #careers-text {
     padding: 3em 5em;
+    text-align: center;
 }
 
 #careers h5 {
