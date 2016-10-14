@@ -160,6 +160,7 @@
     list-style: none;
     padding: 0;
     margin: 0.5em;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.3);
 }
 
 .collapsed-menu li:hover a {
