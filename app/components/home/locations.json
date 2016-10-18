@@ -1,0 +1,11 @@
+[{
+    "name": "Kingsway",
+    "address": "772 Kingsway",
+    "address2": "Vancouver, BC, V5V 3C1",
+    "phone": "(604) 707-0357",
+    "phone2": "(604) 418-8347",
+    "email": "admin@datapi.com",
+    "hoursMT": "12:00 P.M. to 8:00 P.M.",
+    "hoursSa": "9:30 A.M. to 4:00 P.M.",
+    "hoursSu": "11:00 A.M. to 3:00 P.M."
+}]

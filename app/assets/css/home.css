@@ -1,5 +1,5 @@
 @media (max-width: 496px) {
-    #home .section-container div[map-lazy-load] ng-map {
+    #home .section-container div ng-map {
         height: 30vh !important;
     }
     #home .section-container {
@@ -35,8 +35,9 @@
     #home .section-container {
         padding: 1em !important;
     }
-    #home div[map-lazy-load] ng-map {
+    #home div ng-map {
         height: 50vh !important;
+        margin: 0 1em;
     }
     #about .row {
         padding: 1em !important;
@@ -119,15 +120,56 @@
     text-align: center;
 }
 
+#home #locations {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home #locations .location-text {
+    margin-top: 2em;
+    margin-right: 1em;
+    margin-left: 1em;
+    color: white;
+}
+
+#home #locations .slides-nav {
+    background-color: transparent;
+    padding: 0.45em 0.65em 0.75em 0.65em;
+    border: 0;
+    border-radius: 100px;
+}
+
+#home #locations .slides-nav i {
+    font-size: 24px;
+}
+
+#home #locations .slides-nav:focus {
+    outline: 0;
+}
+
+#home #locations .slides-nav:hover {
+    background-color: #137cbf;
+    outline: 0;
+    color: white;
+}
+
+#home #locations h5 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
 #home ng-map {
     height: 60vh;
+    margin: 0 5em;
+    box-shadow: 0 2px 1px 0 rgba(0,0,0,0.3);
 }
 
 #home #about .row {
     display: flex;
     align-items: center;
     flex-flow: row wrap;
-    padding: 5em;
+    padding: 0 5em;
 }
 
 #home #about .col-lg-6:first-child {

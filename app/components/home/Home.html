@@ -1,4 +1,4 @@
-<div id="home">
+<div id="home" ng-init="vm.loadLocations()">
     <section>
         <div class="carousel-container">
             <uib-carousel active="0" interval="7000">
@@ -14,33 +14,34 @@
     </section>
     <section class="section-container container-blue" id="home-contact">
         <div class="row">
-            <div class="col-lg-7">
-                <div map-lazy-load="{{vm.mapUrl}}">
-                    <ng-map center="49.255859, -123.088425" zoom="18">
-                        <marker id="datapi" position="49.255859, -123.088425"></marker>
-                        <info-window visible-on-marker="datapi">
-                            <div>
-                                <h4 class="firstHeading">DataPi Learning Center</h4>
-                                <p>772 Kingsway
-                                    <br>Vancouver, BC, V5V 3C1
-                                    <br>English/Tiếng Việt: (604) 707-0357
-                                    <br>中文: (604) 418-8347
-                                </p>
-                            </div>
-                        </info-window>
-                    </ng-map>
-                </div>
+            <div>
+                <ng-map center="{{vm.mapCenter}}" zoom="12">
+                    <marker id="datapi-{{$index}}" position="{{l.lat}}, {{l.lng}}" ng-repeat="l in vm.locations" on-click="vm.showDetail(l, $index)"></marker>
+                    <info-window id="datapi-info">
+                        <div>
+                            <h4 class="firstHeading">{{vm.loc.name}}</h4>
+                            <p>{{vm.loc.address}}
+                                <br>{{vm.loc.address2}}
+                                <br>English/Tiếng Việt: {{vm.loc.phone}}
+                                <br><span ng-show="vm.loc.phone2">中文: {{vm.loc.phone2}}</span>
+                            </p>
+                        </div>
+                    </info-window>
+                </ng-map>
             </div>
-            <div class="col-lg-5">
-                <div class="text-block padding-top">
-                    <h4>772 Kingsway</h4>
-                    <h4>Vancouver, BC, V5V 3C1</h4>
-                    <h4>admin@datapi.com</h4>
-                    <h3 class="text-uppercase padding-top"><strong>{{'OFFICE_HOURS' | translate}}</strong></h3>
-                    <h4 class="padding-top">{{'MON_TO_THURS' | translate}}: 12:00 P.M. to 8:00 P.M.</h4>
-                    <h4>{{'SATURDAY' | translate}}: 9:30 A.M. to 4:00 P.M.</h4>
-                    <h4>{{'SUNDAY' | translate}}: 11:00 A.M. to 3:00 P.M.</h4>
+            <div id="locations">
+                <button class="slides-nav" ng-click="vm.prevSlide()"><i class="glyphicon glyphicon-chevron-left"></i></button>
+                <div class="location-text" ng-repeat="l in vm.activeLocations track by $index" ng-click="vm.showDetailCenter(e, l, $index)">
+                    <h4 class="text-uppercase"><strong>{{l.name}}</strong></h4>
+                    <h5>{{l.address}}</h5>
+                    <h5>{{l.address2}}</h5>
+                    <h5>{{l.phone}}</h5>
+                    <h5>{{l.email}}</h5>
+                    <h5 class="padding-top">{{'MON_TO_THURS' | translate}}: {{l.hoursMT}}</h5>
+                    <h5>{{'SATURDAY' | translate}}: {{l.hoursSa}}</h5>
+                    <h5>{{'SUNDAY' | translate}}: {{l.hoursSu}}</h5>
                 </div>
+                <button class="slides-nav" ng-click="vm.nextSlide()"><i class="glyphicon glyphicon-chevron-right"></i></button>
             </div>
         </div>
     </section>
