@@ -30,7 +30,7 @@
                 </ng-map>
             </div>
             <div id="locations">
-                <button class="slides-nav" ng-click="vm.prevSlide()"><i class="glyphicon glyphicon-chevron-left"></i></button>
+                <button class="slides-nav" ng-click="vm.prevSlide()" ng-class="{'hide-nav-btn': vm.numLocations >= vm.locations.length}"><i class="glyphicon glyphicon-chevron-left"></i></button>
                 <div class="location-text" ng-repeat="l in vm.activeLocations track by $index" ng-click="vm.showDetailCenter(e, l, $index)">
                     <h4 class="text-uppercase"><strong>{{l.name}}</strong></h4>
                     <h5>{{l.address}}</h5>
@@ -41,7 +41,7 @@
                     <h5>{{'SATURDAY' | translate}}: {{l.hoursSa}}</h5>
                     <h5>{{'SUNDAY' | translate}}: {{l.hoursSu}}</h5>
                 </div>
-                <button class="slides-nav" ng-click="vm.nextSlide()"><i class="glyphicon glyphicon-chevron-right"></i></button>
+                <button class="slides-nav" ng-click="vm.nextSlide()" ng-class="{'hide-nav-btn': vm.numLocations >= vm.locations.length}"><i class="glyphicon glyphicon-chevron-right"></i></button>
             </div>
         </div>
     </section>

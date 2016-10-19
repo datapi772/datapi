@@ -4,9 +4,8 @@ app.controller("HomeCtrl", function(MAP_URL, $http, $window, $scope, NgMap) {
 
     var vm = this;
     var lastIndex = 0;
-    var numLocations = 0;
+    
     var geocoder = new google.maps.Geocoder();
-
     var md = $window.matchMedia("(min-width: 1300px)");
     var md2 = $window.matchMedia("(min-width: 1000px)");
     var md3 = $window.matchMedia("(min-width: 768px)");
@@ -14,13 +13,13 @@ app.controller("HomeCtrl", function(MAP_URL, $http, $window, $scope, NgMap) {
 
     var widthChange = function() {
         if (md.matches) {
-            numLocations = 4;
+            vm.numLocations = 4;
         } else if (md2.matches) {
-            numLocations = 3;
+            vm.numLocations = 3;
         } else if (md3.matches) {
-            numLocations = 2;
+            vm.numLocations = 2;
         } else {
-            numLocations = 1;
+            vm.numLocations = 1;
         }
     }
 
@@ -29,6 +28,7 @@ app.controller("HomeCtrl", function(MAP_URL, $http, $window, $scope, NgMap) {
     vm.mapCenter = "49.255859, -123.088425";
     vm.locations = [];
     vm.activeLocations = [];
+    vm.numLocations = 0;
 
     vm.slides = [{
         title: 'Up to 3 free trial sessions!',
@@ -63,23 +63,11 @@ app.controller("HomeCtrl", function(MAP_URL, $http, $window, $scope, NgMap) {
         $http.get('components/home/locations.json')
             .then((data) => {
                 vm.locations = data.data;
-                numLocations = vm.locations.length;
-                for (var i = 0; i < vm.locations.length; i++) {
-                    geocodeLocation(vm.locations[i]);
-                }
+                vm.numLocations = vm.locations.length -1;
                 activateLocations();
             }, (error) => {
                 console.log(error);
             })
-    }
-
-    var geocodeLocation = function(l) {
-        geocoder.geocode({
-            "address": l.address + " " + l.address2
-        }, function(results) {
-            l.lat = results[0].geometry.location.lat();
-            l.lng = results[0].geometry.location.lng();
-        })
     }
 
     var activateLocations = function() {
@@ -89,9 +77,11 @@ app.controller("HomeCtrl", function(MAP_URL, $http, $window, $scope, NgMap) {
         md4.addListener(activateLocations);
         widthChange();
         vm.activeLocations = [];
-        for (var i = 0; i < numLocations; i++) {
-            vm.activeLocations.push(vm.locations[i]);
-            lastIndex = i;
+        for (var i = 0; i < vm.numLocations; i++) {
+            if (vm.locations[i]) {
+                vm.activeLocations.push(vm.locations[i]);
+                lastIndex = i;
+            }
         }
         $scope.$evalAsync();
     }
@@ -110,16 +100,18 @@ app.controller("HomeCtrl", function(MAP_URL, $http, $window, $scope, NgMap) {
 
     vm.prevSlide = function() {
         vm.activeLocations.splice(vm.activeLocations.length - 1, 1);
-        var ind = lastIndex - 3;
+        var ind = lastIndex - vm.numLocations;
         if (ind >= 0) {
             vm.activeLocations.splice(0, 0, vm.locations[ind]);
             lastIndex -= 1;
         } else {
-            vm.activeLocations.splice(0, 0, vm.locations[ind + vm.locations.length]);
-            if (lastIndex > 0) {
-                lastIndex -= 1;
-            } else {
-                lastIndex = vm.locations.length - 1;
+            if (ind + vm.locations.length >= 0) {
+                vm.activeLocations.splice(0, 0, vm.locations[ind + vm.locations.length]);
+                if (lastIndex > 0) {
+                    lastIndex -= 1;
+                } else {
+                    lastIndex = vm.locations.length - 1;
+                }
             }
         }
     }
