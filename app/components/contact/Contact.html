@@ -1,65 +1,42 @@
-<div id="contact" map-lazy-load="{{vm.mapUrl}}">
+<div id="contact" ng-init="vm.loadLocations()">
     <section class="banner-container">
         <h1 class="text-uppercase">Contact Us</h1>
     </section>
     <section class="section-container">
-        <div class="contact-info-md">
-            <div class="row" id="phone">
-                <div class="col-md-6">
-                    <h3>English/Tiếng Việt:</h3>
-                    <h1>(604) 707-0357</h1>
-                </div>
-                <img src="assets/img/phone_icon.png" alt="">
-                <div class="col-md-6">
-                    <h3>中文:</h3>
-                    <h1>(604) 418-8347</h1>
-                </div>
+        <div id="locations">
+            <button class="slides-nav" ng-click="vm.prevSlide()" ng-class="{'hide-nav-btn': vm.numLocations >= vm.locations.length}"><i class="glyphicon glyphicon-chevron-left"></i></button>
+            <div class="location-text" ng-repeat="l in vm.activeLocations track by $index" ng-click="vm.showDetailCenter(e, l, $index)">
+                <h4 class="text-uppercase"><strong>{{l.name}}</strong></h4>
+                <h5>{{l.address}}</h5>
+                <h5>{{l.address2}}</h5>
+                <h5>{{l.phone}}</h5>
+                <h5>{{l.email}}</h5>
+                <h5 class="padding-top">{{'MON_TO_THURS' | translate}}: {{l.hoursMT}}</h5>
+                <h5>{{'SATURDAY' | translate}}: {{l.hoursSa}}</h5>
+                <h5>{{'SUNDAY' | translate}}: {{l.hoursSu}}</h5>
             </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <h4>Mon to Thu: 12:00 PM - 8:00 PM</h4>
-                </div>
-                <div class="col-md-4">
-                    <h4>Saturday: 9:30 AM - 4:00 PM</h4>
-                </div>
-                <div class="col-md-4">
-                    <h4>Sunday: 11:00 AM - 3:00 PM</h4>
-                </div>
-            </div>
-        </div>
-        <div class="row contact-info-sm">
-            <div class="col-xs-6">
-                <h3>English/Tiếng Việt:</h3>
-                <h1>(604) 707-0357</h1>
-                <h3>中文:</h3>
-                <h1>(604) 418-8347</h1>
-            </div>
-            <div class="col-xs-6">
-                <h4>Mon to Thu: 12:00 PM - 8:00 PM</h4>
-                <h4>Saturday: 9:30 AM - 4:00 PM</h4>
-                <h4>Sunday: 11:00 AM - 3:00 PM</h4>
-            </div>
+            <button class="slides-nav" ng-click="vm.nextSlide()" ng-class="{'hide-nav-btn': vm.numLocations >= vm.locations.length}"><i class="glyphicon glyphicon-chevron-right"></i></button>
         </div>
         <div ng-show="!vm.showDirection" id="index-map">
             <button id="direction-btn" ng-click="vm.showDirection = true">Get Directions</button>
-            <ng-map center="49.255859, -123.088425" zoom="19">
-                <marker id="datapi" position="49.255859, -123.088425"></marker>
-                <info-window visible-on-marker="datapi">
+            <ng-map id="map" center="{{vm.mapCenter}}" zoom="12">
+                <marker id="datapi-{{$index}}" position="{{l.lat}}, {{l.lng}}" ng-repeat="l in vm.locations" on-click="vm.showDetail(l, $index)"></marker>
+                <info-window id="datapi-info">
                     <div>
-                        <h4 class="firstHeading">DataPi Learning Center</h4>
-                        <p>772 Kingsway
-                            <br>Vancouver, BC, V5V 3C1
-                            <br>English/Tiếng Việt: (604) 707-0357
-                            <br>中文: (604) 418-8347
+                        <h4 class="firstHeading">{{vm.loc.name}}</h4>
+                        <p>{{vm.loc.address}}
+                            <br>{{vm.loc.address2}}
+                            <br>English/Tiếng Việt: {{vm.loc.phone}}
+                            <br><span ng-show="vm.loc.phone2">中文: {{vm.loc.phone2}}</span>
                         </p>
                     </div>
                 </info-window>
             </ng-map>
         </div>
-        <div ng-if="vm.showDirection" id="direction-map">
+        <div id="direction-map" ng-class="{'map-show': vm.showDirection, 'map-hidden': !vm.showDirection}">
             <button id="direction-btn" ng-click="vm.showDirection = false"><i class="glyphicon glyphicon-chevron-left"></i> Return</button>
-            <ng-map center="49.255859, -123.088425" zoom="1">
-                <directions draggable="true" travel-mode="{{vm.travelMode}}" origin="current-location" destination="772 Kingsway Vancouver, BC, V5V 3C1" panel="direction-panel"></directions>
+            <ng-map>
+                <directions draggable="true" travel-mode="{{vm.travelMode}}" origin="current-location" destination="{{vm.destAddr}}" panel="direction-panel"></directions>
             </ng-map>
             <div id="direction-panel">
                 <div class="btn-group btn-group-justified">

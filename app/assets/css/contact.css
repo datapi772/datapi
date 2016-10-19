@@ -51,17 +51,52 @@
 }
 
 #contact .banner-container {
-    background-image: linear-gradient(to bottom right, rgba(33, 150, 243, 1) 0%, rgba(57, 182, 233, 1) 45%, rgba(77, 208, 225, 1) 75%, rgba(77, 208, 225, 1) 100%);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%), url("../img/contact_banner.jpg");
     background-size: cover, cover;
     background-repeat: no-repeat, no-repeat;
-    background-position: center, center;
+    background-position: center, 0% 80%;
+}
+
+#contact #locations {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact #locations .location-text {
+    margin-right: 1em;
+    margin-left: 1em;
+    margin-bottom: 2em;
+}
+
+#contact #locations .slides-nav {
+    background-color: transparent;
+    padding: 0.45em 0.65em 0.75em 0.65em;
+    border: 0;
+    border-radius: 100px;
+}
+
+#contact #locations .slides-nav i {
+    font-size: 24px;
+}
+
+#contact #locations .slides-nav:focus {
+    outline: 0;
+}
+
+#contact #locations .slides-nav:hover {
+    background-color: #137cbf;
+    outline: 0;
+    color: white;
+}
+
+#contact #locations h5 {
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 #contact ng-map {
-    border: 1px solid #333;
-}
-
-#contact ng-map {
+    box-shadow: 0px 1px 2px 0 rgba(0,0,0,0.6);
     height: 70vh;
 }
 
@@ -95,6 +130,18 @@
     position: relative;
 }
 
+#contact .map-hidden {
+    visibility: hidden;
+    height: 0%;
+    position: fixed !important;
+}
+
+#contact .map-show {
+    visibility: visible;
+    height: auto;
+    position: relative !important;
+}
+
 #contact #direction-panel {
     position: absolute;
     top: 11;
@@ -114,15 +161,15 @@
     text-align: center;
     z-index: 2;
     position: absolute;
-    top: 48;
-    left: 11;
+    top: 10;
+    left: 110;
     color: rgb(0, 0, 0);
     font-family: Roboto, Arial, sans-serif;
     -webkit-user-select: none;
     font-size: 11px;
     padding: 8px;
     border-radius: 2px;
-    -webkit-background-clip: padding-box;
+    border: 0;
     box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 2px 0px;
     min-width: 22px;
     font-weight: 500;
