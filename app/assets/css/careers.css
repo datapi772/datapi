@@ -82,3 +82,32 @@
     margin-bottom: 5px;
 }
 
+/* ANIMATIONS */
+
+#careers .col-sm-4:first-child .card {
+    animation: zoom-in 500ms ease-out 1s both;
+}
+
+#careers .col-sm-4:nth-child(2) .card {
+    animation: zoom-in 500ms ease-out 1.3s both;
+}
+
+#careers .col-sm-4:nth-child(3) .card {
+    animation: zoom-in 500ms ease-out 1.6s both;
+}
+
+#careers #careers-text {
+    animation: fade-in 500ms ease-out 2s both;
+}
+
+#careers .page-header {
+    animation: fade-in 500ms ease-out 2.3s both;
+}
+
+#careers .col-sm-6:first-child .profile {
+    animation: fade-in-left 500ms ease-out 2.5s both;
+}
+
+#careers .col-sm-6:nth-child(2) .profile {
+    animation: fade-in-right 500ms ease-out 2.5s both;
+}
