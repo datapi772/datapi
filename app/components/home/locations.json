@@ -2,6 +2,8 @@
     "name": "Kingsway",
     "address": "772 Kingsway",
     "address2": "Vancouver, BC, V5V 3C1",
+    "lat": "49.2558594",
+    "lng": "-123.08842549999997",
     "phone": "(604) 707-0357",
     "phone2": "(604) 418-8347",
     "email": "admin@datapi.com",
