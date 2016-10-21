@@ -133,6 +133,10 @@ div[ng-view] .banner-container {
     text-align: center;
     height: 45em;
     position: relative;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    width: 100%;
 }
 
 .video-frame iframe {

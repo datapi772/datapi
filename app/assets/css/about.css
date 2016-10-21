@@ -26,13 +26,6 @@
     box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 2px 0px;
 }
 
-#about .video-frame {
-    overflow: hidden;
-    position: relative;
-    display: inline-block;
-    width: 100%;
-}
-
 #about .video-overlay {
     background-image: url("../img/play_button_sm.png"), linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url("../img/about_video.jpg");
 }
