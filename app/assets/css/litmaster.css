@@ -66,10 +66,10 @@
     border-radius: 10px;
     background-color: #f5f5f5;
     position: absolute;
-    top: -50%;
+    bottom: 0;
     left: 0;
     width: 50%;
-    height: 300%;
+    height: 150%;
     z-index: 201;
     animation: rotate-left 2s ease-out 1.6s both;
 }
@@ -79,10 +79,10 @@
     border-radius: 10px;
     background-color: #f5f5f5;
     position: absolute;
-    top: -50%;
+    bottom: 0;
     right: 0;
     width: 50%;
-    height: 300%;
+    height: 150%;
     z-index: 201;
     animation: rotate-right 2s ease-out 1.6s both;
 }

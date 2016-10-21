@@ -54,11 +54,13 @@
 }
 
 @keyframes rotate-left {
-    to {transform: rotate3d(-1,-1,1,-120deg);}
+    from {transform-origin: bottom right;}
+    to {transform: rotate3d(0,0,1, -90deg); transform-origin: bottom right;}
 }
 
 @keyframes rotate-right {
-    to {transform: rotate3d(1,-1,1,120deg);}
+    from {transform-origin: bottom left;}
+    to {transform: rotate3d(0,0,1, 90deg); transform-origin: bottom left;}
 }
 
 @keyframes slide-in-down {
