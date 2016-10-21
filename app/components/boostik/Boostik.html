@@ -35,7 +35,7 @@
     <section class="section-container" id="worksheets">
         <div class="preview-slides" ng-swipe-left="vm.nextSlide()" ng-swipe-right="vm.prevSlide()">
             <button class="slides-nav" ng-click="vm.prevSlide()"><i class="glyphicon glyphicon-chevron-left"></i></button>
-            <img src="{{p}}" ng-repeat="p in vm.activeSlides track by $index">
+            <img src="{{p}}" ng-repeat="p in vm.activeSlides">
             <button class="slides-nav" ng-click="vm.nextSlide()"><i class="glyphicon glyphicon-chevron-right"></i></button>
         </div>
     </section>

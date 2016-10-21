@@ -36,10 +36,6 @@
     background-position: center, top;
 }
 
-#boostik .section-container {
-    background-color: #ffffff;
-}
-
 #boostik .video-frame {
     margin-top: 3em;
 }
@@ -58,6 +54,10 @@
     width: 25%;
     margin: 0 1em;
     pointer-events: none;
+}
+
+#boostik .preview-slides img {
+    overflow: hidden;
 }
 
 #boostik .preview-slides .slides-nav {
@@ -102,4 +102,37 @@
 
 #boostik .boost-btn a:visited {
     color: white;
+}
+
+/* ANIMATIONS */
+
+#boostik .section-container.text-center h4,
+#boostik .section-container.text-center h3,
+#boostik .section-container.text-center img {
+    animation: fade-in 500ms ease-out 1s both;
+}
+
+#boostik .boost-btn {
+    animation: fade-in-bounce 500ms ease-out 1.4s both;
+}
+
+#boostik .video-overlay {
+    animation: round-grow 800ms linear 1.7s both;
+}
+
+#boostik .img-block img {
+    animation: fade-in 500ms ease-out 2s both;
+}
+
+#boostik .img-block h4, 
+#boostik .img-block p {
+    animation: fade-in 500ms ease-out 2.2s both;
+}
+
+#boostik .preview-slides {
+    animation: fade-in 500ms ease-out 2.5s both;
+}
+
+#boostik .preview-slides img.ng-enter {
+    animation: fade-in-pulse 800ms ease-out both;
 }

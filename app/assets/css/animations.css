@@ -3,6 +3,15 @@
     to {opacity: 1;}
 }
 
+@keyframes fade-in-bounce {
+    from {transform: translate3d(0,0,0); opacity: 0;}
+    53%, 80% {transform: translate3d(0,0,0);}
+    40%, 43% {transform: translate3d(0,-20px,0);}
+    70% {transform: translate3d(0,-10px,0);}
+    90% {transform: translate3d(0,-4px,0);}
+    to {transform: translate3d(0,0,0); opacity: 1;}
+}
+
 @keyframes fade-in-left {
     from {opacity: 0; transform: translateX(-100%);}
     to {opacity: 1; transform: translateX(0);}
@@ -18,9 +27,20 @@
     to {opacity: 1; transform: translateY(0);}
 }
 
+@keyframes fade-in-pulse {
+    from {transform: scale3d(1,1,1); opacity: 0;}
+    50% {transform: scale3d(1.05,1.05,1.05);}
+    to {transform: scale3d(1,1,1); opacity: 1;}
+}
+
 @keyframes fade-out {
     from {opacity: 1;}
     to {opacity: 0;}
+}
+
+@keyframes round-grow {
+    from {border-radius: 600px; transform: scale3d(0.001,0.001,0.001);}
+    to {border-radius: 0; transform: scale3d(1,1,1) rotate(0.1deg);}
 }
 
 @keyframes reveal-left {
