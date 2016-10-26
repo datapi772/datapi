@@ -98,6 +98,11 @@ div[ng-view] .banner-container {
     animation: slide-in-down 500ms ease-in 700ms both;
 }
 
+section {
+    position: relative;
+    overflow: hidden;
+}
+
 .banner-container {
     display: flex;
     align-content: center;
@@ -213,4 +218,36 @@ div[ng-view] .banner-container {
 
 .show-nav-btn {
     visibility: visible;
+}
+
+.card {
+    box-shadow: rgba(0, 0, 0, 0.3) 0 1px 2px 0;
+    position: relative;
+    max-height: 12em;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card .card-image-top {
+    width: 100%;
+}
+
+.card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-overlay h2 {
+    color: white;
+    text-align: center;
 }

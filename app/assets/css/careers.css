@@ -40,38 +40,6 @@
     text-align: center;
 }
 
-#careers .card {
-    box-shadow: rgba(0, 0, 0, 0.3) 0 1px 2px 0;
-    position: relative;
-    max-height: 12em;
-    overflow: hidden;
-}
-
-#careers .card img {
-    width: 100%;
-}
-
-#careers .card .card-image-top {
-    width: 100%;
-}
-
-#careers .card-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.4);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#careers .card-overlay h2 {
-    color: white;
-    text-align: center;
-}
-
 #careers #careers-text {
     padding: 3em 5em;
     text-align: center;
