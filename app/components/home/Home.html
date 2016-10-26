@@ -12,6 +12,46 @@
             </uib-carousel>
         </div>
     </section>
+    <section class="section-container text-center" id="about">
+        <h2>{{'AD_INTRO' | translate}}</h2>
+        <div class="row">
+            <h3>{{'AD_HEAD' | translate}}</h3>
+            <div class="col-lg-6">
+                <div class="card">
+                    <img class="img-responsive" src="assets/img/home_about_1.jpg" alt="">
+                    <div class="card-overlay">
+                        <h4>{{'AD_1' | translate}}</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="card">
+                    <img class="img-responsive" src="assets/img/home_about_2.jpg" alt="">
+                    <div class="card-overlay">
+                        <h4>{{'AD_4' | translate}}</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="card">
+                    <img class="img-responsive" src="assets/img/home_about_3.jpg" alt="">
+                    <div class="card-overlay">
+                        <h4>{{'AD_2' | translate}}</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="card">
+                    <img class="img-responsive" src="assets/img/home_about_4.jpg" alt="">
+                    <div class="card-overlay">
+                        <h4>{{'AD_3' | translate}}</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="section-container container-blue" id="home-contact">
         <div class="row">
             <div>
@@ -42,25 +82,6 @@
                     <h5>{{'SUNDAY' | translate}}: {{l.hoursSu}}</h5>
                 </div>
                 <button class="slides-nav" ng-click="vm.nextSlide()" ng-class="{'hide-nav-btn': vm.numLocations >= vm.locations.length}"><i class="glyphicon glyphicon-chevron-right"></i></button>
-            </div>
-        </div>
-    </section>
-    <section class="section-container container-green" id="about">
-        <div class="row">
-            <div class="col-lg-6">
-                <img src="assets/img/success_icon.png" alt="">
-                <img src="assets/img/tutoring_icon.png" alt="">
-                <img src="assets/img/book_icon.png" alt="">
-            </div>
-            <div class="col-lg-6">
-                <p>{{'AD_INTRO' | translate}}</p>
-                <p>{{'AD_HEAD' | translate}}</p>
-                <ul>
-                    <li>{{'AD_1' | translate}}</li>
-                    <li>{{'AD_2' | translate}}</li>
-                    <li>{{'AD_3' | translate}}</li>
-                    <li>{{'AD_4' | translate}}</li>
-                </ul>
             </div>
         </div>
     </section>

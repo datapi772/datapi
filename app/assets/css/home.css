@@ -11,6 +11,13 @@
     #home .carousel-container .carousel-caption h3 {
         font-size: 15px !important;
     }
+    #home #about h2 {
+        font-size: 18px !important;
+    }
+    #home #about .card-overlay {
+        text-align: center !important;
+        justify-content: center !important;
+    }
 }
 
 @media (max-width: 768px) {
@@ -35,12 +42,11 @@
     #home .section-container {
         padding: 1em !important;
     }
-    #home div ng-map {
+    #home #home-contact ng-map {
         height: 50vh !important;
-        margin: 0 1em;
     }
-    #about .row {
-        padding: 1em !important;
+    #home .section-container#about .row {
+        padding: 0em !important;
     }
 }
 
@@ -60,8 +66,13 @@
     .carousel-caption h3 {
         font-size: 20px !important;
     }
-    #about .row {
-        padding: 2em !important;
+    #home #about h2 {
+        font-size: 24px;
+    }
+    #home #about .row {
+        padding: 0 2em !important;
+    }
+    #home #about .col-lg-6:nth-of-type(odd) .card-overlay {
     }
     #home #about .col-lg-6 img {
         width: 25% !important;
@@ -174,9 +185,56 @@
 
 #home #about .col-lg-6:first-child {
     text-align: center;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.15))
 }
 
-#home #about .col-lg-6 img {
-    width: 30%;
-    margin-bottom: 1em;
+
+/* ANIMATIONS */
+
+#home .carousel-container:after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #137cbf;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    animation: slide-down 700ms ease-in 700ms both;
+}
+
+#home #about h2:first-child {
+    animation: fade-in 500ms ease-out 1.4s both;
+}
+
+#home #about .row:nth-of-type(1) h3 {
+    animation: fade-in 500ms ease-out 1.7s both;
+}
+
+#home #about .row:nth-of-type(1) .col-lg-6:nth-of-type(1) .card {
+    animation: flip-x-in 700ms ease-out 2s both;
+}
+
+#home #about .row:nth-of-type(1) .col-lg-6:nth-of-type(2) .card {
+    animation: flip-x-in 700ms ease-out 2.3s both;
+}
+
+#home #about .row:nth-of-type(2) .col-lg-6:nth-of-type(1) .card {
+    animation: flip-x-in 700ms ease-out 2.6s both;
+}
+
+#home #about .row:nth-of-type(2) .col-lg-6:nth-of-type(2) .card {
+    animation: flip-x-in 700ms ease-out 2.9s both;
+}
+
+#home ng-map {
+    animation: fade-in 500ms ease-out 3.2s both;
+}
+
+#home #locations .location-text {
+    animation: fade-in 500ms ease-out 3.5s both;
+}
+
+#home #locations .slides-nav {
+    animation: fade-in 500ms ease-out 3.8s both;
 }

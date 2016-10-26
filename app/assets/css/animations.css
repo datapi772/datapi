@@ -38,6 +38,11 @@
     to {opacity: 0;}
 }
 
+@keyframes flip-x-in {
+    from {transform: perspective(400px) rotate3d(1,0,0, 90deg); opacity: 0;}
+    to {transform: perspective(400px);}
+}
+
 @keyframes round-grow {
     from {border-radius: 600px; transform: scale3d(0.001,0.001,0.001);}
     to {border-radius: 0; transform: scale3d(1,1,1) rotate(0.1deg);}
@@ -61,6 +66,11 @@
 @keyframes rotate-right {
     from {transform-origin: bottom left;}
     to {transform: rotate3d(0,0,1, 90deg); transform-origin: bottom left;}
+}
+
+@keyframes slide-down {
+    from {transform: translateY(0);}
+    to {transform: translateY(100%);}
 }
 
 @keyframes slide-in-down {
