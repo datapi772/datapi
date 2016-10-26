@@ -57,42 +57,14 @@
     background-position: center, 0% 80%;
 }
 
-#contact #locations {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#contact .locations .location-text {
+    margin-bottom: 1em;
+    margin-top: 0em;
 }
 
-#contact #locations .location-text {
-    margin-right: 1em;
-    margin-left: 1em;
-    margin-bottom: 2em;
-}
-
-#contact #locations .slides-nav {
-    background-color: transparent;
-    padding: 0.45em 0.65em 0.75em 0.65em;
-    border: 0;
-    border-radius: 100px;
-}
-
-#contact #locations .slides-nav i {
-    font-size: 24px;
-}
-
-#contact #locations .slides-nav:focus {
-    outline: 0;
-}
-
-#contact #locations .slides-nav:hover {
-    background-color: #137cbf;
-    outline: 0;
-    color: white;
-}
-
-#contact #locations h5 {
-    margin-top: 5px;
-    margin-bottom: 5px;
+#contact .locations .location-text h4,
+#contact .locations .location-text h5 {
+    color: #333;
 }
 
 #contact ng-map {

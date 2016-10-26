@@ -73,9 +73,15 @@
         padding: 0 2em !important;
     }
     #home #about .col-lg-6:nth-of-type(odd) .card-overlay {
+        justify-content: flex-end;
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.3));
     }
-    #home #about .col-lg-6 img {
-        width: 25% !important;
+    #home #about .col-lg-6:nth-of-type(even) .card-overlay {
+        justify-content: flex-start;
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.15))
+    }
+    #home #home-contact ng-map {
+        margin: 0 1em;
     }
 }
 
@@ -131,60 +137,42 @@
     text-align: center;
 }
 
-#home #locations {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#home #locations .location-text {
-    margin-top: 2em;
-    margin-right: 1em;
-    margin-left: 1em;
-    color: white;
-}
-
-#home #locations .slides-nav {
-    background-color: transparent;
-    padding: 0.45em 0.65em 0.75em 0.65em;
-    border: 0;
-    border-radius: 100px;
-}
-
-#home #locations .slides-nav i {
-    font-size: 24px;
-}
-
-#home #locations .slides-nav:focus {
-    outline: 0;
-}
-
-#home #locations .slides-nav:hover {
-    background-color: #137cbf;
-    outline: 0;
-    color: white;
-}
-
-#home #locations h5 {
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
 #home ng-map {
     height: 60vh;
     margin: 0 5em;
-    box-shadow: 0 2px 1px 0 rgba(0,0,0,0.3);
+    box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.3);
 }
 
 #home #about .row {
-    display: flex;
-    align-items: center;
-    flex-flow: row wrap;
     padding: 0 5em;
 }
 
-#home #about .col-lg-6:first-child {
-    text-align: center;
+#home #about h2 {
+    margin: 0 0 0.5em 0;
+}
+
+#home #about .card {
+    max-height: none;
+}
+
+#home #about .card .card-overlay {
+    padding: 0 2em;
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .8);
+}
+
+#home #about .col-lg-6 {
+    margin-top: 0.5em;
+    padding: 0 0.5em;
+}
+
+#home #about .col-lg-6:nth-of-type(odd) .card-overlay {
+    text-align: right;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.3));
+}
+
+#home #about .col-lg-6:nth-of-type(even) .card-overlay {
+    text-align: left;
     background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.15))
 }
 
@@ -231,10 +219,10 @@
     animation: fade-in 500ms ease-out 3.2s both;
 }
 
-#home #locations .location-text {
+#home .locations .location-text {
     animation: fade-in 500ms ease-out 3.5s both;
 }
 
-#home #locations .slides-nav {
+#home .locations .slides-nav {
     animation: fade-in 500ms ease-out 3.8s both;
 }

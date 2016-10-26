@@ -251,3 +251,68 @@ section {
     color: white;
     text-align: center;
 }
+
+.locations {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.locations .location-text {
+    margin-top: 1em;
+    color: white;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+.locations .slides-nav {
+    background-color: transparent;
+    padding: 0.45em 0.65em 0.75em 0.65em;
+    border: 0;
+    border-radius: 100px;
+}
+
+.locations .slides-nav i {
+    font-size: 24px;
+}
+
+.locations .slides-nav:focus {
+    outline: 0;
+}
+
+.locations .slides-nav:hover {
+    background-color: #137cbf;
+    outline: 0;
+    color: white;
+}
+
+.locations .location-text h5 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.locations .location-text h4 {
+    margin-top: 5px;
+}
+
+.locations .location-text {
+    padding: 1em;
+}
+
+.locations .location-text:hover {
+    cursor: pointer;
+}
+
+.locations .active-loc,
+.locations .location-text:hover {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 3px 0;
+    background-color: white;
+    border-radius: 3px;
+}
+
+.locations .location-text:hover h4,
+.locations .location-text:hover h5,
+.locations .active-loc h4,
+.locations .active-loc h5 {
+    color: #333;
+}
