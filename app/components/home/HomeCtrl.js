@@ -44,7 +44,7 @@ app.controller("HomeCtrl", function(MAP_URL, $http, $window, $scope, NgMap) {
         class: 'boostik-slide'
     }];
 
-    NgMap.getMap().then(function(map) {
+    NgMap.getMap('home-map').then(function(map) {
         vm.map = map;
     })
 

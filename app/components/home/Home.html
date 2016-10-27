@@ -55,7 +55,7 @@
     <section class="section-container container-blue" id="home-contact">
         <div class="row">
             <div>
-                <ng-map center="{{vm.mapCenter}}" zoom="12">
+                <ng-map id="home-map" center="{{vm.mapCenter}}" zoom="12">
                     <marker id="datapi-{{$index}}" position="{{l.lat}}, {{l.lng}}" ng-repeat="l in vm.locations" on-click="vm.showDetail(l, $index)"></marker>
                     <info-window id="datapi-info">
                         <div>
