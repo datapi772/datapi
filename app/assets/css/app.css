@@ -316,3 +316,7 @@ section {
 .locations .active-loc h5 {
     color: #333;
 }
+
+.ng-map-info-window {
+    animation: zoom-in-up 400ms ease-out both;
+}
