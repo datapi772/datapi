@@ -181,7 +181,11 @@
     animation: fade-in 300ms ease-out;
 }
 
-#contact .locations .location-text {
+#contact .locations .location-text.ng-enter {
+    animation: fade-in-pulse 800ms ease-out both;
+}
+
+#contact .locations {
     animation: fade-in 500ms ease-out 1s both;
 }
 

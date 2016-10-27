@@ -71,7 +71,7 @@
             </div>
             <div class="locations">
                 <button class="slides-nav" ng-click="vm.prevSlide()" ng-class="{'hide-nav-btn': vm.numLocations >= vm.locations.length}"><i class="glyphicon glyphicon-chevron-left"></i></button>
-                <div class="location-text" ng-repeat="l in vm.activeLocations track by $index" ng-click="vm.showDetailCenter(e, l, $index)" ng-class="{'active-loc': l == vm.loc}">
+                <div class="location-text" ng-repeat="l in vm.activeLocations" ng-click="vm.showDetailCenter(e, l, $index)" ng-class="{'active-loc': l == vm.loc}">
                     <h4 class="text-uppercase"><strong>{{l.name}}</strong></h4>
                     <h5>{{l.address}}</h5>
                     <h5>{{l.address2}}</h5>

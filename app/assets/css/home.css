@@ -219,10 +219,14 @@
     animation: fade-in 500ms ease-out 3.2s both;
 }
 
-#home .locations .location-text {
+#home .locations {
     animation: fade-in 500ms ease-out 3.5s both;
 }
 
+#home .locations .location-text.ng-enter {
+    animation: fade-in-pulse 800ms ease-out both;
+}
+
 #home .locations .slides-nav {
-    animation: fade-in 500ms ease-out 3.8s both;
+    animation: fade-in 500ms ease-out both;
 }
