@@ -1,6 +1,6 @@
 var app = angular.module("BoostikCtrl", []);
 
-app.controller("BoostikCtrl", function($window, $scope, $location, $anchorScroll) {
+app.controller("BoostikCtrl", function($window, $scope, $location, $anchorScroll, $uibModal) {
 
     var vm = this;
 
@@ -72,6 +72,20 @@ app.controller("BoostikCtrl", function($window, $scope, $location, $anchorScroll
     vm.goToWorksheets = function () {
         $location.hash('worksheets');
         $anchorScroll();
+    }
+
+    vm.previewModal = function (image) {
+        var modal = $uibModal.open({
+            templateUrl: "worksheetModal.html",
+            controller: function ($scope, img) {
+                $scope.img = img;
+            },
+            resolve: {
+                img: function () {
+                    return image;
+                }
+            }
+        })
     }
 
 })

@@ -53,11 +53,11 @@
 #boostik .preview-slides img {
     width: 25%;
     margin: 0 1em;
-    pointer-events: none;
+    overflow: hidden;
 }
 
-#boostik .preview-slides img {
-    overflow: hidden;
+#boostik .preview-slides img:hover {
+    cursor: pointer;
 }
 
 #boostik .preview-slides .slides-nav {
@@ -102,6 +102,10 @@
 
 #boostik .boost-btn a:visited {
     color: white;
+}
+
+#worksheet-preview img {
+    width: 100%;
 }
 
 /* ANIMATIONS */
