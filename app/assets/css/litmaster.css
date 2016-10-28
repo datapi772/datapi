@@ -69,7 +69,7 @@
     bottom: 0;
     left: 0;
     width: 50%;
-    height: 150%;
+    height: 250%;
     z-index: 201;
     animation: rotate-left 2s ease-out 1.6s both;
 }
@@ -82,7 +82,7 @@
     bottom: 0;
     right: 0;
     width: 50%;
-    height: 150%;
+    height: 250%;
     z-index: 201;
     animation: rotate-right 2s ease-out 1.6s both;
 }
