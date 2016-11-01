@@ -3,7 +3,7 @@
         <h1 class="text-uppercase">Contact Us</h1>
     </section>
     <section class="section-container">
-        <div class="locations">
+        <div class="locations" ng-swipe-left="vm.nextSlide()" ng-swipe-right="vm.prevSlide()">
             <button class="slides-nav" ng-click="vm.prevSlide()" ng-class="{'hide-nav-btn': vm.numLocations >= vm.locations.length}"><i class="glyphicon glyphicon-chevron-left"></i></button>
             <div class="location-text" ng-repeat="l in vm.activeLocations" ng-click="vm.showDetailCenter(e, l, $index)" ng-class="{'active-loc': l == vm.loc}">
                 <h4 class="text-uppercase"><strong>{{l.name}}</strong></h4>
@@ -20,7 +20,7 @@
         <div id="maps">
             <div ng-show="!vm.showDirection" id="index-map">
                 <button id="direction-btn" ng-click="vm.showDirection = true" ng-show="vm.loc">Get Directions</button>
-                <ng-map id="map" center="{{vm.mapCenter}}" zoom="12">
+                <ng-map id="map" center="{{vm.mapCenter}}" zoom="12" map-type-control="false">
                     <marker id="datapi-{{$index}}" position="{{l.lat}}, {{l.lng}}" ng-repeat="l in vm.locations" on-click="vm.showDetail(l, $index)"></marker>
                     <info-window id="datapi-info">
                         <div>
@@ -36,10 +36,12 @@
             </div>
             <div id="direction-map" ng-class="{'map-show': vm.showDirection, 'map-hidden': !vm.showDirection}">
                 <button id="direction-btn" ng-click="vm.showDirection = false"><i class="glyphicon glyphicon-chevron-left"></i> Return</button>
-                <ng-map>
+                <ng-map map-type-control="false">
                     <directions draggable="true" travel-mode="{{vm.travelMode}}" origin="current-location" destination="{{vm.destAddr}}" panel="direction-panel"></directions>
                 </ng-map>
-                <div id="direction-panel">
+                
+            </div>
+            <div id="direction-panel" ng-show="vm.showDirection">
                     <div class="btn-group btn-group-justified">
                         <div class="btn-group">
                             <button class="btn btn-default" ng-model="vm.travelMode" uib-btn-radio="'DRIVING'">Driving</button>
@@ -49,7 +51,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
         </div>
     </section>
 </div>

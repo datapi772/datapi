@@ -69,7 +69,7 @@
                     </info-window>
                 </ng-map>
             </div>
-            <div class="locations">
+            <div class="locations" ng-swipe-left="vm.nextSlide()" ng-swipe-right="vm.prevSlide()">
                 <button class="slides-nav" ng-click="vm.prevSlide()" ng-class="{'hide-nav-btn': vm.numLocations >= vm.locations.length}"><i class="glyphicon glyphicon-chevron-left"></i></button>
                 <div class="location-text" ng-repeat="l in vm.activeLocations" ng-click="vm.showDetailCenter(e, l, $index)" ng-class="{'active-loc': l == vm.loc}">
                     <h4 class="text-uppercase"><strong>{{l.name}}</strong></h4>

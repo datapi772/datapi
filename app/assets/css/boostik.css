@@ -1,15 +1,16 @@
 @media (max-width: 496px) {
-    h1 {
-        font-size: 24px !important;
-    }
-    h3 {
+    #boostik h3 {
         font-size: 18px !important;
     }
-    h4 {
+    #boostik h4 {
         font-size: 15px !important;
     }
     #boostik .section-container .preview-slides img {
         width: 75% !important;
+    }
+    #boostik .img-block img {
+        width: 40% !important;
+        margin: 0.5em 0 1em 0;
     }
 }
 
@@ -138,5 +139,5 @@
 }
 
 #boostik .preview-slides img.ng-enter {
-    animation: fade-in-pulse 800ms ease-out both;
+    animation: fade-in-pulse 800ms ease-out;
 }

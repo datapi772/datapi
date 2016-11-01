@@ -2,6 +2,9 @@
 }
 
 @media (max-width: 768px) {
+    #about #about-text {
+        padding: 1em !important;
+    }
 }
 
 @media (max-width: 992px) {

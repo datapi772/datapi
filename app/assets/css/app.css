@@ -19,8 +19,13 @@
         padding: 3em 0em !important;
     }
     .info-container .img-block img {
-        width: 70% !important;
         height: auto !important;
+    }
+    .banner-container {
+        height: 13em !important;
+    }
+    .banner-container h1 {
+        font-size: 24px !important;
     }
 }
 
@@ -71,7 +76,6 @@
 @media (max-width: 1200px) {
     .section-container {
         padding: 3em !important;
-        font-size: 0.9em !important;
     }
     div[ng-view] {
         padding-top: 5em !important;

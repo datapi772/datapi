@@ -1,6 +1,7 @@
-@media (max-width: 496px) { 
-    h1 {
-        font-size: 24px !important;
+@media (max-width: 496px) {
+    #litmaster .img-block img {
+        width: 30% !important;
+        margin: 0.5em 0 1em 0;
     }
 }
 
