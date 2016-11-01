@@ -27,6 +27,9 @@
     .banner-container h1 {
         font-size: 24px !important;
     }
+    .location-text h5 {
+        font-size: 13px !important;
+    }
 }
 
 @media (max-width: 768px) {

@@ -1,47 +1,27 @@
+@media (max-width: 496px) {
+    #contact .location-text {
+        padding: 0.5em !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    #contact .location-text h5 {
+        font-size: 12px !important;
+    }
+}
+
 @media (max-width: 648px) {
     #contact #maps {
-        min-height: 30em !important;
+        min-height: 25em !important;
     }
     #contact .section-container ng-map {
-        height: 30em !important;
-    }
-    #contact .contact-info-sm {
-        flex-flow: column wrap;
-    }
-    #contact .contact-info-sm .col-xs-6 {
-        width: 100%;
-    }
-    #contact .contact-info-sm h1 {
-        font-size: 24px;
-    }
-    #contact .contact-info-sm h3 {
-        font-size: 16px;
-        margin-top: 0;
-    }
-    #contact .contact-info-sm h4 {
-        font-size: 12px;
+        height: 25em !important;
     }
 }
 
 @media (max-width: 768px) {
-    #contact .contact-info-md {
-        display: none !important;
-    }
 }
 
 @media (max-width: 992px) {
-    #contact .contact-info-md {
-        display: none !important;
-    }
-    #contact .contact-info-sm {
-        display: flex !important;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 1em;
-    }
-    #contact .col-md-6 h1 {
-        margin-bottom: 1em !important;
-    }
     #contact #direction-panel {
         position: relative !important;
         right: 0 !important;
