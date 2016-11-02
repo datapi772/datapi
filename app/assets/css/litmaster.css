@@ -3,10 +3,12 @@
         width: 30% !important;
         margin: 0.5em 0 1em 0;
     }
+    #litmaster .section-container h1 {
+        font-size: 1.6em !important;
+    }
 }
 
 @media (max-width: 768px) {
-    
 }
 
 @media (max-width: 992px) {

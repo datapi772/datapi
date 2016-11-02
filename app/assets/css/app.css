@@ -1,5 +1,5 @@
 @media (max-width: 496px) {
-    section.section-container {
+    div section.section-container {
         padding: 1em !important;
     }
     .section-container .video-frame {
@@ -32,8 +32,8 @@
     }
 }
 
-@media (max-width: 768px) {
-    .section-container {
+@media (max-width: 767px) {
+    section.section-container {
         padding: 2em 1em !important;
     }
     .profiles {

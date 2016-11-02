@@ -21,6 +21,9 @@
     #boostik .preview-slides img {
         width: 50% !important;
     }
+    #boostik .video-frame {
+        margin-top: 1em !important;
+    }
 }
 
 @media (max-width: 1200px) {
