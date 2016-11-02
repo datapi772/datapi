@@ -113,6 +113,10 @@
     min-height: 100%;
 }
 
+.carousel-inner .item:hover {
+    cursor: pointer;
+}
+
 .carousel-control {
     background-image: none !important;
     width: 10%;

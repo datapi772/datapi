@@ -1,6 +1,6 @@
 var app = angular.module("HomeCtrl", []);
 
-app.controller("HomeCtrl", function(MAP_URL, $http, $window, $scope, NgMap) {
+app.controller("HomeCtrl", function(MAP_URL, $http, $location, $window, $scope, NgMap) {
 
     var vm = this;
     var lastIndex = 0;
@@ -33,16 +33,23 @@ app.controller("HomeCtrl", function(MAP_URL, $http, $window, $scope, NgMap) {
     vm.slides = [{
         title: 'Up to 3 free trial sessions!',
         subtitle: 'Quality tutoring services for Grades 1 through 1st year undergrad.',
-        class: 'tutoring-slide'
+        class: 'tutoring-slide',
+        url: 'tutoring'
     }, {
         title: 'Try it now for free!',
         subtitle: 'Litmaster\'s interactive exercises will help you master poetry efficiently.',
-        class: 'litmaster-slide'
+        class: 'litmaster-slide',
+        url: 'litmaster'
     }, {
         title: 'Boostik Worksheets',
         subtitle: 'Highly specialized educational resources to enhance student learning.',
-        class: 'boostik-slide'
+        class: 'boostik-slide',
+        url: 'boostik'
     }];
+
+    vm.goTo = function (path) {
+        $location.path(path)
+    }
 
     NgMap.getMap('home-map').then(function(map) {
         vm.map = map;
