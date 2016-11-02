@@ -27,7 +27,7 @@ app.config(function($routeProvider, $locationProvider, $translateProvider) {
     })
 
     .when('/tutoring', {
-        templateUrl: 'components/tutoring/Tutoring.html'
+        templateUrl: 'components/error/404.html'
     })
 
     .when('/litmaster', {
@@ -40,6 +40,10 @@ app.config(function($routeProvider, $locationProvider, $translateProvider) {
         templateUrl: 'components/boostik/Boostik.html',
         controller: 'BoostikCtrl',
         controllerAs: 'vm'
+    })
+
+    .when('/404', {
+        templateUrl: 'components/error/404.html'
     });
 
     $translateProvider.useStaticFilesLoader({
@@ -49,6 +53,8 @@ app.config(function($routeProvider, $locationProvider, $translateProvider) {
 
     $translateProvider.preferredLanguage('en');
     $translateProvider.useSanitizeValueStrategy('escape');
+
+    $routeProvider.otherwise({redirectTo: '/404'})
 
     $locationProvider.html5Mode(true);
 

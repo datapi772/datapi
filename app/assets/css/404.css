@@ -1,0 +1,28 @@
+@media (max-width: 496px) {
+    #error h1 {
+        font-size: 2em !important;
+    }
+}
+
+#error section {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+}
+
+#error section .glyphicon-remove-circle {
+    font-size: 3em;
+}
+
+#error .t-lip .glyphicon-remove-circle:nth-of-type(1),
+#error .t-lip .glyphicon-remove-circle:nth-of-type(6) {
+    transform: translateY(20%);
+}
+
+#error .b-lip .glyphicon-remove-circle:nth-of-type(2),
+#error .b-lip .glyphicon-remove-circle:nth-of-type(5) {
+    transform: translateY(-30%);
+}
