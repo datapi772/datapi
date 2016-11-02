@@ -104,6 +104,11 @@
     margin: 0.5em;
 }
 
+.navbar-header a {
+    text-decoration: none;
+    color: #333;
+}
+
 .navbar-toggle {
     margin-top: 18px !important;
 }
