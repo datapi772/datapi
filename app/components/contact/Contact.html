@@ -20,7 +20,7 @@
         <div id="maps">
             <div ng-show="!vm.showDirection" id="index-map">
                 <button id="direction-btn" ng-click="vm.showDirection = true" ng-show="vm.loc">Get Directions</button>
-                <ng-map id="map" center="{{vm.mapCenter}}" zoom="12" map-type-control="false">
+                <ng-map id="map" center="{{vm.mapCenter}}" zoom="12" map-type-control="false" scrollwheel="false">
                     <marker id="datapi-{{$index}}" position="{{l.lat}}, {{l.lng}}" ng-repeat="l in vm.locations" on-click="vm.showDetail(l, $index)"></marker>
                     <info-window id="datapi-info">
                         <div>
@@ -36,7 +36,7 @@
             </div>
             <div id="direction-map" ng-class="{'map-show': vm.showDirection, 'map-hidden': !vm.showDirection}">
                 <button id="direction-btn" ng-click="vm.showDirection = false"><i class="glyphicon glyphicon-chevron-left"></i> Return</button>
-                <ng-map map-type-control="false">
+                <ng-map map-type-control="false" scrollwheel="false">
                     <directions draggable="true" travel-mode="{{vm.travelMode}}" origin="current-location" destination="{{vm.destAddr}}" panel="direction-panel"></directions>
                 </ng-map>
                 
