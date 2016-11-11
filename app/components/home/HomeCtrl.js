@@ -11,6 +11,16 @@ app.controller("HomeCtrl", function(MAP_URL, $http, $location, $window, $scope, 
     var md3 = $window.matchMedia("(min-width: 768px)");
     var md4 = $window.matchMedia("(min-width: 468px)");
 
+    vm.corner = 0;
+    $window.setInterval( () => {
+        if (vm.corner >= 3) {
+            vm.corner = 0;
+        } else {
+            vm.corner++;
+        }
+        $scope.$evalAsync();
+    }, 2000);
+
     var widthChange = function() {
         if (md.matches) {
             vm.numLocations = 4;

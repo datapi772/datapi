@@ -11,9 +11,6 @@
     #home .carousel-container .carousel-caption h3 {
         font-size: 15px !important;
     }
-    #home #about h2 {
-        font-size: 18px !important;
-    }
     #home #about .card-overlay {
         text-align: center !important;
         justify-content: center !important;
@@ -22,7 +19,11 @@
         font-size: 15px !important;
     }
     #home #about h2 {
-        margin: 1em 0 0.5em 0 !important;
+        font-size: 18px !important;
+    }
+    div#home section#about div.corner {
+        padding: 5em 2em !important;
+        height: 12em;
     }
 }
 
@@ -51,6 +52,19 @@
     #home .section-container#about .row {
         padding: 0em !important;
     }
+    #home #about .corner {
+        width: 100% !important;
+        padding: 6em 5em !important;
+    }
+    #home #about .corner:nth-of-type(2) {
+        animation: flip-x-in 700ms ease-out 2.3s both !important;
+    }
+    #home #about .corner:nth-of-type(3) {
+        animation: flip-x-in 700ms ease-out 2.6s both !important;
+    }
+    #home #about .corner:nth-of-type(4) {
+        animation: flip-x-in 700ms ease-out 2.9s both !important;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -69,7 +83,7 @@
     .carousel-caption h3 {
         font-size: 20px !important;
     }
-    #home #about h2 {
+    #home h2 {
         font-size: 24px;
     }
     #home #about .row {
@@ -85,6 +99,9 @@
     }
     #home #home-contact ng-map {
         margin: 0 1em;
+    }
+    #home .corner {
+        padding: 8em 5em !important;
     }
 }
 
@@ -102,7 +119,7 @@
 
 .carousel-container {
     height: 45em;
-    box-shadow: 0 1px 5px 0 rgba(0,0,0,0.3);
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.3);
 }
 
 .carousel-inner .item {
@@ -151,22 +168,95 @@
     box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.3);
 }
 
-#home #about .row {
-    padding: 0 5em;
+#home #about-header {
+    background-color: white;
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.6);
+    padding: 2em;
 }
 
-#home #about h2 {
-    margin: 0 0 0.5em 0;
+#home #about-header h2 {
+    font-weight: 600;
+    margin: 0;
 }
 
-#home #about .card {
-    max-height: none;
+#home #about {
+    display: flex;
+    flex-flow: row wrap;
 }
 
-#home #about .card .card-overlay {
-    padding: 0 2em;
+#home #about .corner {
+    text-align: center;
+    padding: 10em 5em;
+    box-shadow: inset 0 0 100px 30px rgba(0, 0, 0, 0.3);
+    text-shadow: 1px 0px 2px black;
+    width: 50%;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#home #about .corner h2 {
+    margin: 0;
+}
+
+#home #about .corner:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    opacity: 0;
+    transition: 300ms ease-out;
+    z-index: -1;
+}
+
+#home #about .corner:nth-of-type(1):before {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url('../img/home_about_1a.jpg');
+}
+
+#home #about .corner:nth-of-type(2):before {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url('../img/home_about_2a.jpg');
+}
+
+#home #about .corner:nth-of-type(3):before {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url('../img/home_about_3a.jpg');
+}
+
+#home #about .corner:nth-of-type(4):before {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url('../img/home_about_4a.jpg');
+}
+
+#home #about .corner:hover:before {
+    opacity: 1;
+}
+
+#home #about .show-corner:before {
+    opacity: 1;
+}
+
+#home #about .card-blue {
+    background-color: rgba(19, 124, 191, 0.7);
     color: white;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, .8);
+}
+
+#home #about .card-orange {
+    background-color: rgba(236, 137, 39, 0.7);
+    color: white;
+}
+
+#home #about .card-green {
+    background-color: rgba(117, 183, 67, 0.7);
+    color: white;
+}
+
+#home #about .card-red {
+    background-color: rgba(239, 50, 50, 0.7);
+    color: white;
 }
 
 #home #about .col-lg-6 {
@@ -199,28 +289,24 @@
     animation: slide-down 700ms ease-in 700ms both;
 }
 
-#home #about h2:first-child {
+#home .section-container.text-center {
     animation: fade-in 500ms ease-out 1.4s both;
 }
 
-#home #about .row:nth-of-type(1) h3 {
+#home #about-header {
     animation: fade-in 500ms ease-out 1.7s both;
 }
 
-#home #about .row:nth-of-type(1) .col-lg-6:nth-of-type(1) .card {
+#home #about .corner:nth-of-type(1),
+#home #about .corner:nth-of-type(2) {
+    animation: flip-x-in 700ms ease-out 2s both;
     animation: flip-x-in 700ms ease-out 2s both;
 }
 
-#home #about .row:nth-of-type(1) .col-lg-6:nth-of-type(2) .card {
+#home #about .corner:nth-of-type(3),
+#home #about .corner:nth-of-type(4) {
     animation: flip-x-in 700ms ease-out 2.3s both;
-}
-
-#home #about .row:nth-of-type(2) .col-lg-6:nth-of-type(1) .card {
-    animation: flip-x-in 700ms ease-out 2.6s both;
-}
-
-#home #about .row:nth-of-type(2) .col-lg-6:nth-of-type(2) .card {
-    animation: flip-x-in 700ms ease-out 2.9s both;
+    animation: flip-x-in 700ms ease-out 2.3s both;
 }
 
 #home ng-map {
