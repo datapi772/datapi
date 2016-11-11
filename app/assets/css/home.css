@@ -216,19 +216,19 @@
 }
 
 #home #about .corner:nth-of-type(1):before {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url('../img/home_about_1a.jpg');
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url('../img/home_about_1.jpg');
 }
 
 #home #about .corner:nth-of-type(2):before {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url('../img/home_about_2a.jpg');
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url('../img/home_about_2.jpg');
 }
 
 #home #about .corner:nth-of-type(3):before {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url('../img/home_about_3a.jpg');
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url('../img/home_about_3.jpg');
 }
 
 #home #about .corner:nth-of-type(4):before {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url('../img/home_about_4a.jpg');
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url('../img/home_about_4.jpg');
 }
 
 #home #about .corner:hover:before {
