@@ -9,11 +9,12 @@
 }
 
 @media (max-width: 768px) {
+    #litmaster .video-frame {
+        margin-top: 1em !important;
+    }
 }
 
-@media (max-width: 992px) {
-    
-}
+@media (max-width: 992px) {}
 
 #litmaster .banner-container {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url("../img/litmaster_banner_5.jpg");
@@ -23,11 +24,11 @@
 }
 
 #litmaster .lit-btn {
-    padding: 12px 20px ;
+    padding: 12px 20px;
     background-color: #75b743;
     color: white;
     font-size: 16px;
-    box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
 }
 
 #litmaster .lit-btn:hover {
@@ -54,6 +55,7 @@
     background-image: url("../img/play_button_sm.png"), linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url("../img/litmaster_video.jpg");
 }
 
+
 /* ANIMATIONS */
 
 #litmaster .section-container.text-center h1 {
@@ -62,6 +64,10 @@
 
 #litmaster .lit-btn {
     animation: fade-in-bounce 500ms ease-out 1.3s both;
+}
+
+#litmaster .video-frame {
+    margin-top: 3em;
 }
 
 #litmaster .video-frame:before {
@@ -98,7 +104,7 @@
     animation: fade-in 500ms ease-out 2.5s both;
 }
 
-#litmaster .img-block h4, 
+#litmaster .img-block h4,
 #litmaster .img-block p {
     animation: fade-in 500ms ease-out 2.8s both;
 }

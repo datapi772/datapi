@@ -71,6 +71,9 @@
     .info-container {
         padding: 4em 4em !important;
     }
+    .img-block {
+        padding: 0em !important;
+    }
     .img-block img {
         height: 10% !important;
     }
@@ -79,6 +82,9 @@
 @media (max-width: 1200px) {
     .section-container {
         padding: 3em !important;
+    }
+    .info-container {
+        padding: 4em 4em !important;
     }
     div[ng-view] {
         padding-top: 5em !important;
@@ -187,9 +193,8 @@ section {
     padding: 0 1em;
 }
 
-.img-block h4 {
+.img-block h3 {
     color: white;
-    font-weight: 500;
 }
 
 .img-block img {
@@ -199,6 +204,7 @@ section {
 
 .img-block p {
     color: white;
+    font-size: 1.2em;
 }
 
 .video-overlay {
