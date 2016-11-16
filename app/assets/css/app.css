@@ -52,6 +52,9 @@
     .info-container .img-block {
         padding: 0;
     }
+    body>div[ng-view] {
+        padding-top: 5em !important;
+    }
 }
 
 @media (max-width: 992px) {
@@ -87,7 +90,7 @@
         padding: 4em 4em !important;
     }
     div[ng-view] {
-        padding-top: 5em !important;
+        padding-top: 8.6em !important;
     }
 }
 
@@ -96,7 +99,7 @@
 }
 
 div[ng-view] {
-    padding-top: 6em;
+    padding-top: 9.7em;
 }
 
 div[ng-view]>div {
