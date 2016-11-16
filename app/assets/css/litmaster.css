@@ -24,15 +24,16 @@
 }
 
 #litmaster .lit-btn {
-    padding: 12px 20px;
+    padding: 12px 0px;
     background-color: #75b743;
     color: white;
     font-size: 16px;
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+    transition: all 700ms;
 }
 
 #litmaster .lit-btn:hover {
-    background-color: yellow;
+    background-color: #03a9f4;
 }
 
 #litmaster .lit-btn:hover a {
@@ -41,6 +42,8 @@
 
 #litmaster .lit-btn a {
     color: white;
+    transition: all 0.5s;
+    padding: 12px 20px;
 }
 
 #litmaster .lit-btn a:hover {
