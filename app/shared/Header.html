@@ -49,18 +49,15 @@
             </ul>
             <li role="menuitem" id="collapsed-languages" ng-click="hm.isCollapsed = !hm.isCollapsed">
                 <div class="btn-group btn-group-justified">
-                    <a class="btn btn-default" ng-repeat="l in hm.languages" ng-click="hm.changeLanguage(l)" >{{l.lang}}</a>
+                    <a class="btn btn-default" ng-repeat="l in hm.languages" ng-click="hm.changeLanguage(l)" ng-class="{'active': hm.currentLanguage == l.lang}">{{l.lang}}</a>
                 </div>
             </li>
         </ul>
-        <ul class="nav navbar-nav navbar-right">
-            <li id="languages-dropdown" uib-dropdown is-open="hm.isOpen2" keyboard-nav>
-                <button class="btn btn-default" uib-dropdown-toggle>{{hm.currentLanguage}} <i class="caret"></i></button>
-                <ul uib-dropdown-menu role="menu">
-                    <li ng-repeat="l in hm.languages"><a href="" ng-click="hm.changeLanguage(l)">{{l.lang}}</a></li>
-                </ul>
-            </li>
+        <ul class="nav navbar-nav navbar-right" id="languages-list">
+            <li ng-repeat="l in hm.languages"><a href="" ng-click="hm.changeLanguage(l)" ng-class="{'active': hm.currentLanguage == l.lang}">{{l.lang}}</a></li>
         </ul>
+    </div>
+    <div class="container-fluid sub-nav">
         <ul class="nav navbar-nav">
             <li role="menuitem">
                 <a href="/">Home</a>
