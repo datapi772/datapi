@@ -59,7 +59,7 @@
 
 @media (max-width: 992px) {
     .video-frame {
-        height: 40em !important;
+        height: 30em !important;
     }
     .profiles {
         flex-flow: column wrap !important;
@@ -91,6 +91,9 @@
     }
     div[ng-view] {
         padding-top: 8.6em !important;
+    }
+    .video-frame {
+        width: 100% !important;
     }
 }
 
@@ -148,12 +151,13 @@ section {
 
 .video-frame {
     text-align: center;
-    height: 45em;
+    height: 40em;
     position: relative;
     overflow: hidden;
     position: relative;
-    display: inline-block;
-    width: 100%;
+    display: block;
+    margin: auto;
+    width: 80%;
 }
 
 .video-frame iframe {
@@ -161,6 +165,7 @@ section {
     width: 100%;
     position: relative;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 2px 0px;
+    animation: none !important;
 }
 
 .profiles {
@@ -222,6 +227,10 @@ section {
     height: 100%;
     z-index: 200;
     box-shadow: 0 1px 2px 0 rgba(0,0,0,0.6);
+}
+
+.video-overlay.ng-hide {
+    animation: fade-out 700ms ease-in forwards !important;
 }
 
 .hide-nav-btn {
