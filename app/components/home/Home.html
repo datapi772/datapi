@@ -19,16 +19,16 @@
         <h2>{{'AD_HEAD' | translate}}</h2>
     </section>
     <section id="about">
-        <div class="corner card-blue" ng-class="{'show-corner': vm.corner == 0}">
+        <div class="corner card-blue" ng-class="{'show-corner': vm.corner == 0 && !vm.pauseInterval}" ng-mouseover="vm.pauseInterval = true" ng-mouseleave="vm.pauseInterval = false">
             <h2>{{'AD_1' | translate}}</h2>
         </div>
-        <div class="corner card-orange" ng-class="{'show-corner': vm.corner == 1}">
+        <div class="corner card-orange" ng-class="{'show-corner': vm.corner == 1 && !vm.pauseInterval}" ng-mouseover="vm.pauseInterval = true" ng-mouseleave="vm.pauseInterval = false">
             <h2>{{'AD_2' | translate}}</h2>
         </div>
-        <div class="corner card-green" ng-class="{'show-corner': vm.corner == 2}">
+        <div class="corner card-green" ng-class="{'show-corner': vm.corner == 2 && !vm.pauseInterval}" ng-mouseover="vm.pauseInterval = true" ng-mouseleave="vm.pauseInterval = false">
             <h2>{{'AD_4' | translate}}</h2>
         </div>
-        <div class="corner card-red" ng-class="{'show-corner': vm.corner == 3}">
+        <div class="corner card-red" ng-class="{'show-corner': vm.corner == 3 && !vm.pauseInterval}" ng-mouseover="vm.pauseInterval = true" ng-mouseleave="vm.pauseInterval = false">
             <h2>{{'AD_3' | translate}}</h2>
         </div>
     </section>

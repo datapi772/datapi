@@ -4,7 +4,7 @@ app.controller("HomeCtrl", function(MAP_URL, $http, $location, $window, $scope, 
 
     var vm = this;
     var lastIndex = 0;
-    
+
     var geocoder = new google.maps.Geocoder();
     var md = $window.matchMedia("(min-width: 1300px)");
     var md2 = $window.matchMedia("(min-width: 1000px)");
@@ -12,13 +12,16 @@ app.controller("HomeCtrl", function(MAP_URL, $http, $location, $window, $scope, 
     var md4 = $window.matchMedia("(min-width: 468px)");
 
     vm.corner = 0;
-    $window.setInterval( () => {
-        if (vm.corner >= 3) {
-            vm.corner = 0;
-        } else {
-            vm.corner++;
+    vm.pauseInterval = false;
+    $window.setInterval(() => {
+        if (!vm.pauseInterval) {
+            if (vm.corner >= 3) {
+                vm.corner = 0;
+            } else {
+                vm.corner++;
+            }
+            $scope.$evalAsync();
         }
-        $scope.$evalAsync();
     }, 2000);
 
     var widthChange = function() {
@@ -57,7 +60,7 @@ app.controller("HomeCtrl", function(MAP_URL, $http, $location, $window, $scope, 
         url: 'boostik'
     }];
 
-    vm.goTo = function (path) {
+    vm.goTo = function(path) {
         $location.path(path)
     }
 
@@ -80,7 +83,7 @@ app.controller("HomeCtrl", function(MAP_URL, $http, $location, $window, $scope, 
         $http.get('components/home/locations.json')
             .then((data) => {
                 vm.locations = data.data;
-                vm.numLocations = vm.locations.length -1;
+                vm.numLocations = vm.locations.length - 1;
                 activateLocations();
             }, (error) => {
                 console.log(error);
