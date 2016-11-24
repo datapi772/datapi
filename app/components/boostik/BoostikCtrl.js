@@ -87,4 +87,10 @@ app.controller("BoostikCtrl", function($window, $scope, $uibModal) {
         })
     }
 
+    vm.scrolltoVideo = function () {
+        vm.hideOverlay = !vm.hideOverlay;
+        var e = document.querySelector('.video-frame');
+        window.scrollTo(0, e.offsetHeight);
+    }
+
 })

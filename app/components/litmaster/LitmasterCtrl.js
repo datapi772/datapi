@@ -15,4 +15,10 @@ app.controller("LitmasterCtrl", function ($http) {
         })
     }
 
+    vm.scrolltoVideo = function () {
+        vm.hideOverlay = !vm.hideOverlay;
+        var e = document.querySelector('.video-frame');
+        window.scrollTo(0, e.offsetHeight-110);
+    }
+
 })
