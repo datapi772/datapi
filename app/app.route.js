@@ -11,7 +11,9 @@ app.config(function($routeProvider, $locationProvider, $translateProvider) {
     })
 
     .when('/about', {
-        templateUrl: 'components/about/About.html'
+        templateUrl: 'components/about/About.html',
+        controller: 'AboutCtrl',
+        controllerAs: 'vm'
     })
 
     .when('/careers', {

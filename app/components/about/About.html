@@ -4,7 +4,7 @@
     </section>
     <section class="section-container">
         <div class="video-frame">
-            <div class="video-overlay" ng-hide="vm.hideOverlay" ng-click="vm.hideOverlay = !vm.hideOverlay"></div>
+            <div class="video-overlay" ng-hide="vm.hideOverlay" ng-click="vm.scrolltoVideo()"></div>
             <iframe src="https://www.youtube.com/embed/ZgQ2ib7iUE4?autoplay=1" frameborder="0" allowfullscreen align="middle" ng-if="vm.hideOverlay"></iframe>
         </div>
         <div class="container" id="about-text">
