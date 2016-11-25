@@ -93,9 +93,10 @@
 .navbar {
     border-radius: 0;
     background-color: #ffffff;
-    box-shadow: 0 20px 100px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 1px 20px rgba(0, 0, 0, 0.8);
     border: none;
     margin-bottom: 0;
+    -webkit-transform: translateZ(0);
 }
 
 .navbar .container-fluid {
