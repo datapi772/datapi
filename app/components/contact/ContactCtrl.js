@@ -50,7 +50,7 @@ app.controller("ContactCtrl", function(MAP_URL, $http, $window, $scope, NgMap) {
     }
 
     vm.loadLocations = function() {
-        $http.get('components/home/locations.json')
+        $http.get('../assets/locations.json')
             .then((data) => {
                 vm.locations = data.data;
                 vm.numLocations = vm.locations.length - 1;
@@ -73,7 +73,6 @@ app.controller("ContactCtrl", function(MAP_URL, $http, $window, $scope, NgMap) {
                 lastIndex = i;
             }
         }
-        console.log(vm.activeLocations);
         $scope.$evalAsync();
     }
 

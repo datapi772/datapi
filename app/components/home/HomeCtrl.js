@@ -80,7 +80,7 @@ app.controller("HomeCtrl", function(MAP_URL, $http, $location, $window, $scope, 
     }
 
     vm.loadLocations = function() {
-        $http.get('components/home/locations.json')
+        $http.get('../assets/locations.json')
             .then((data) => {
                 vm.locations = data.data;
                 vm.numLocations = vm.locations.length - 1;
