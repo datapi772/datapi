@@ -29,7 +29,7 @@ app.config(function($routeProvider, $locationProvider, $translateProvider) {
     })
 
     .when('/tutoring', {
-        templateUrl: 'components/error/404.html'
+        templateUrl: 'components/tutoring/Tutoring.html'
     })
 
     .when('/litmaster', {
