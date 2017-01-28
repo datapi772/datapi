@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 @media (max-width: 496px) {
     div section.section-container {
         padding: 1em !important;
@@ -95,6 +97,10 @@
     .video-frame {
         width: 100% !important;
     }
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
 }
 
 .padding-top {

@@ -105,6 +105,12 @@
     }
 }
 
+@media(min-width: 4000px) {
+    #home ng-map {
+        height: 50em !important;
+    }
+}
+
 .tutoring-slide {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url('../img/tutoring_banner.jpg');
 }
@@ -163,7 +169,7 @@
 }
 
 #home ng-map {
-    height: 35em;
+    height: 40em;
     margin: 0 5em;
     box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.3);
 }

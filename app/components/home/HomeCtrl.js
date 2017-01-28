@@ -44,13 +44,13 @@ app.controller("HomeCtrl", function(MAP_URL, $http, $location, $window, $scope, 
     vm.numLocations = 0;
 
     vm.slides = [{
-        title: 'Up to 3 free trial sessions!',
-        subtitle: 'Quality tutoring services for Grades 1 through 1st year undergrad.',
+        title: 'Up to 2 FREE trial sessions!',
+        subtitle: 'Quality tutoring services for Grades K through 1st year undergrad.',
         class: 'tutoring-slide',
         url: 'tutoring'
     }, {
         title: 'Try it now for free!',
-        subtitle: 'Litmaster\'s interactive exercises will help you master poetry efficiently.',
+        subtitle: 'Litmaster\'s interactive exercises app will help you master poetry efficiently.',
         class: 'litmaster-slide',
         url: 'litmaster'
     }, {
