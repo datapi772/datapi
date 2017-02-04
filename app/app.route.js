@@ -44,6 +44,18 @@ app.config(function($routeProvider, $locationProvider, $translateProvider) {
         controllerAs: 'vm'
     })
 
+    .when('/hubble', {
+        templateUrl: 'components/hubble/Hubble.html',
+        controller: 'HubbleCtrl',
+        controllerAs: 'vm'
+    })
+
+    .when('/trak', {
+        templateUrl: 'components/trak/Trak.html',
+        controller: 'TrakCtrl',
+        controllerAs: 'vm'
+    })
+
     .when('/404', {
         templateUrl: 'components/error/404.html'
     });

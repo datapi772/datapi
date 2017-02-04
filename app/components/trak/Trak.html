@@ -1,0 +1,28 @@
+<div id="trak">
+    <section>
+        <div class="carousel-container">
+            <uib-carousel active="0" interval="5000">
+                <uib-slide ng-repeat="slide in vm.slides track by $index" index="$index" ng-click="vm.goTo(slide.url)">
+                    <div class="slide-img" ng-class="slide.class"></div>
+                    <div class="carousel-caption">
+                        <h1 class="text-uppercase">{{slide.title}}</h1>
+                        <h3>{{slide.subtitle}}</h3>
+                    </div>
+                </uib-slide>
+            </uib-carousel>
+        </div>
+    </section>
+    <section class="section-container text-center">
+        <h3>DataPi's core product, TRAK, has been continuously improving and refining since 2000. The product today is a well-designed Customer Relationship Management app, where critical features are optimized.</h3>
+    </section>
+    <section class="section-container container-blue text-center text-white">
+        <h4>For a free demo or a 6-month free trial, freelance tutors or representatives of educational centres and school are welcome to contact our agents today.</h4>
+    </section>
+    <section class="section-container text-center">
+        <div class="video-frame">
+            <!-- <div class="video-overlay" ng-hide="vm.hideOverlay" ng-click="vm.scrolltoVideo()"></div>
+            <iframe src="https://www.youtube.com/embed/dO3SmIoFeu8?autoplay=1" frameborder="0" allowfullscreen align="middle" ng-if="vm.hideOverlay"></iframe> -->
+            <iframe src="https://www.youtube.com/embed/dO3SmIoFeu8" frameborder="0" allowfullscreen align="middle"></iframe>
+        </div>
+    </section>
+</div>

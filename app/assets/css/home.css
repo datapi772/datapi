@@ -46,6 +46,12 @@
     .slide-img.boostik-slide {
         background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url('../img/boostik_banner_sm.jpg') !important;
     }
+    .slide-img.hubble-slide {
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url('../img/hubble_banner_sm.jpg') !important;
+    }
+    .slide-img.trak-slide {
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url('../img/trak_banner_sm.jpg') !important;
+    }
     #home #home-contact ng-map {
         height: 30em !important;
     }
@@ -121,6 +127,14 @@
 
 .boostik-slide {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url('../img/boostik_banner.jpg');
+}
+
+.hubble-slide {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url('../img/hubble_banner.jpg');
+}
+
+.trak-slide {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url('../img/trak_banner.jpg') !important;
 }
 
 .carousel-container {

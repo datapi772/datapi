@@ -58,6 +58,16 @@ app.controller("HomeCtrl", function(MAP_URL, $http, $location, $window, $scope, 
         subtitle: 'Highly specialized educational resources to enhance student learning.',
         class: 'boostik-slide',
         url: 'boostik'
+    }, {
+        title: 'Hubble',
+        subtitle: 'Integration of essential tutoring resources since 2000 through a custom tailored app for the 21st-century tutor.',
+        class: 'hubble-slide',
+        url: 'hubble'
+    }, {
+        title: 'TRAK',
+        subtitle: 'The ultimate Customer Relationship Management (CRM) software for the tutoring industry.',
+        class: 'trak-slide',
+        url: 'trak'
     }];
 
     vm.goTo = function(path) {
