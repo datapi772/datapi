@@ -21,8 +21,8 @@
     #boostik .preview-slides img {
         width: 50% !important;
     }
-    #boostik .video-frame {
-        margin-top: 1em !important;
+    #boostik .col-sm-5 img {
+        width: 80% !important;
     }
 }
 
@@ -38,10 +38,6 @@
     background-size: cover, cover;
     background-repeat: no-repeat, no-repeat;
     background-position: center, top;
-}
-
-#boostik .video-frame {
-    margin-top: 3em;
 }
 
 #boostik .video-overlay {
@@ -112,33 +108,54 @@
     width: 100%;
 }
 
+#boostik section:nth-of-type(2) .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+#boostik .section-container .col-sm-5 img {
+    width: 100%;
+}
+
 /* ANIMATIONS */
 
-#boostik .section-container.text-center h4,
-#boostik .section-container.text-center h3,
-#boostik .section-container.text-center img {
+#boostik .section-container .row .col-sm-5 img {
     animation: fade-in 500ms ease-out 1s both;
 }
 
+#boostik .section-container .row .col-sm-7 h3 {
+    animation: fade-in 500ms ease-out 1.2s both;
+}
+
+#boostik .section-container .row .col-sm-7 h4 {
+    animation: fade-in 500ms ease-out 1.4s both;
+}
+
 #boostik .boost-btn {
-    animation: fade-in-bounce 500ms ease-out 1.4s both;
+    animation: fade-in-bounce 500ms ease-out 1.6s both;
+}
+
+#boostik .section-container.container-blue h3.text-white {
+    animation: fade-in 500ms ease-out 1.8s both;
 }
 
 #boostik .video-overlay {
-    animation: round-grow 800ms linear 1.7s both;
+    animation: round-grow 800ms linear 2s both;
 }
 
 #boostik .img-block img {
-    animation: fade-in 500ms ease-out 2s both;
+    animation: fade-in 500ms ease-out 2.4s both;
 }
 
 #boostik .img-block h4, 
 #boostik .img-block p {
-    animation: fade-in 500ms ease-out 2.2s both;
+    animation: fade-in 500ms ease-out 2.6s both;
 }
 
 #boostik .preview-slides {
-    animation: fade-in 500ms ease-out 2.5s both;
+    animation: fade-in 500ms ease-out 3s both;
 }
 
 #boostik .preview-slides img.ng-enter {

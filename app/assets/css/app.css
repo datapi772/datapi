@@ -155,6 +155,10 @@ section {
     background-color: #75b743;
 }
 
+.container-white {
+    background-color: white;
+}
+
 .video-frame {
     text-align: center;
     height: 40em;
@@ -346,4 +350,8 @@ section {
 
 .ng-map-info-window {
     animation: zoom-in-up 400ms ease-out both;
+}
+
+.text-white {
+    color: white !important;
 }

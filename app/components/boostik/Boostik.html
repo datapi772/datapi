@@ -2,11 +2,24 @@
     <section class="banner-container">
         <h1 class="text-uppercase">Boostik</h1>
     </section>
+    <section class="section-container">
+        <div class="row">
+            <div class="col-sm-5 text-center">
+                <img src="assets/img/ws_samples.png" alt="">
+            </div>
+            <div class="col-sm-7 text-left">
+                <h3 class="page-header text-center">Highly specialized educational resources to enhance learning</h3>
+                <h4>Boostik worksheets enhance foundational skills and guarantee learning retention. The minute-driven, worksheet exercises are common tools used frequently by educators as they are proven to be highly effective and engaging for students.</h4>
+                <br>
+                <h4>Boostik app generates quality worksheets, covering a diverse range of topics, in English, Math, and Science from grades 2 to 12. This cloud-based software is highly user-friendly and is especially engineered to provide after-school support to students who lack strong foundational knowledge.</h4>
+                <button class="btn boost-btn" ng-click="vm.goToWorksheets()"><i class="caret"></i>&nbspWorksheet Samples Below&nbsp<i class="caret"></i></button>
+            </div>
+        </div>
+    </section>
+    <section class="section-container container-blue text-center">
+        <h3 class="text-white">For a free demo or a 6-month free trial, parents, freelance tutors, or representatives from educational centres and schools are welcome to contact our sales agents today.</h3>
+    </section>
     <section class="section-container text-center">
-        <h4>Boostik worksheets are minute-math-like exercises that guarantee learning retention. Boostik has topics in English, Math, and Science for all levels.</h4>
-        <button class="btn boost-btn" ng-click="vm.goToWorksheets()"><i class="caret"></i>&nbspWorksheet Samples Below&nbsp<i class="caret"></i></button>
-        <img src="assets/img/boostik_logo.png" alt="">
-        <h3>Call <a href="tel:+16047070357">(604) 707-0357</a> or email <a href="mailto:free_trial@datapi.com">free_trial@datapi.com</a> for a free trial.</h3>
         <div class="video-frame">
             <div class="video-overlay" ng-hide="vm.hideOverlay" ng-click="vm.scrolltoVideo()"></div>
             <iframe src="https://www.youtube.com/embed/q8byZ5t0jAQ?autoplay=1" frameborder="0" allowfullscreen align="middle" ng-if="vm.hideOverlay"></iframe>
