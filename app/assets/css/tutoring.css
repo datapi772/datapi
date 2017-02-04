@@ -4,3 +4,35 @@
     background-repeat: no-repeat, no-repeat;
     background-position: center, 50% 30%;
 }
+
+#tutoring .video-frame {
+    margin-top: 3em;
+}
+
+#tutoring section:nth-of-type(2) h3 {
+    animation: fade-in 500ms ease-out 1s both;
+}
+
+#tutoring section:nth-of-type(3) .img-block img {
+    animation: fade-in 500ms ease-out 1.4s both;
+}
+
+#tutoring section:nth-of-type(3) .img-block p {
+    animation: fade-in 500ms ease-out 1.7s both;
+}
+
+#tutoring section:nth-of-type(4) h2 {
+    animation: fade-in 500ms ease-out 2s both;
+}
+
+#tutoring section:nth-of-type(4) h5 {
+    animation: fade-in 500ms ease-out 2.2s both;
+}
+
+#tutoring section:nth-of-type(4) h4 {
+    animation: fade-in 500ms ease-out 2.4s both;
+}
+
+#tutoring section:nth-of-type(5) h3 {
+    animation: fade-in 500ms ease-out 2.7s both;
+}
