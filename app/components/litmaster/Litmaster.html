@@ -43,21 +43,21 @@
                 <h1>What the students are saying</h1>
             </div>
             <div class="row profiles" ng-repeat="t in vm.students | limitTo:(vm.students.length+1)/2">
-                <div class="col-sm-6" ng-show="vm.students[$index*2]">
+                <div class="col-sm-6" ng-show="::vm.students[$index*2]">
                     <div class="profile">
-                        <img ng-src="{{vm.students[$index*2].img}}" alt="">
+                        <img ng-src="{{::vm.students[$index*2].img}}" alt="">
                         <div class="text-block">
-                            <h4><strong>{{vm.students[$index*2].name}}</strong></h4>
-                            <p>{{vm.students[$index*2].desc}}</p>
+                            <h4><strong>{{::vm.students[$index*2].name}}</strong></h4>
+                            <p>{{::vm.students[$index*2].desc}}</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6" ng-show="vm.students[$index*2+1]">
+                <div class="col-sm-6" ng-show="::vm.students[$index*2+1]">
                     <div class="profile">
-                        <img ng-src="{{vm.students[$index*2+1].img}}" alt="">
+                        <img ng-src="{{::vm.students[$index*2+1].img}}" alt="">
                         <div class="text-block">
-                            <h4><strong>{{vm.students[$index*2+1].name}}</strong></h4>
-                            <p>{{vm.students[$index*2+1].desc}}</p>
+                            <h4><strong>{{::vm.students[$index*2+1].name}}</strong></h4>
+                            <p>{{::vm.students[$index*2+1].desc}}</p>
                         </div>
                     </div>
                 </div>

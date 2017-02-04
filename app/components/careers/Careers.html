@@ -37,23 +37,23 @@
                 <h1>Testimonials</h1>
             </div>
             <div class="row profiles" ng-repeat="t in vm.testimonials | limitTo:(vm.testimonials.length+1)/2">
-                <div class="col-sm-6" ng-show="vm.testimonials[$index*2]">
+                <div class="col-sm-6" ng-show="::vm.testimonials[$index*2]">
                     <div class="profile">
-                        <img ng-src="{{vm.testimonials[$index*2].img}}" alt="">
+                        <img ng-src="{{::vm.testimonials[$index*2].img}}" alt="">
                         <div class="text-block">
-                            <h5><strong>{{vm.testimonials[$index*2].degree}}</strong></h5>
-                            <h5><strong>{{vm.testimonials[$index*2].school}}</strong></h5>
-                            <p>{{vm.testimonials[$index*2].desc}}</p>
+                            <h5><strong>{{::vm.testimonials[$index*2].degree}}</strong></h5>
+                            <h5><strong>{{::vm.testimonials[$index*2].school}}</strong></h5>
+                            <p>{{::vm.testimonials[$index*2].desc}}</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6" ng-show="vm.testimonials[$index*2+1]">
+                <div class="col-sm-6" ng-show="::vm.testimonials[$index*2+1]">
                     <div class="profile">
-                        <img ng-src="{{vm.testimonials[$index*2+1].img}}" alt="">
+                        <img ng-src="{{::vm.testimonials[$index*2+1].img}}" alt="">
                         <div class="text-block">
-                            <h5><strong>{{vm.testimonials[$index*2+1].degree}}</strong></h5>
-                            <h5><strong>{{vm.testimonials[$index*2+1].school}}</strong></h5>
-                            <p>{{vm.testimonials[$index*2+1].desc}}</p>
+                            <h5><strong>{{::vm.testimonials[$index*2+1].degree}}</strong></h5>
+                            <h5><strong>{{::vm.testimonials[$index*2+1].school}}</strong></h5>
+                            <p>{{::vm.testimonials[$index*2+1].desc}}</p>
                         </div>
                     </div>
                 </div>

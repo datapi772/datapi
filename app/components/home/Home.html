@@ -2,11 +2,11 @@
     <section>
         <div class="carousel-container">
             <uib-carousel active="0" interval="5000">
-                <uib-slide ng-repeat="slide in vm.slides track by $index" index="$index" ng-click="vm.goTo(slide.url)">
-                    <div class="slide-img" ng-class="slide.class"></div>
+                <uib-slide ng-repeat="slide in ::vm.slides track by $index" index="$index" ng-click="vm.goTo(slide.url)">
+                    <div class="slide-img" ng-class="::slide.class"></div>
                     <div class="carousel-caption">
-                        <h1 class="text-uppercase">{{slide.title}}</h1>
-                        <h3>{{slide.subtitle}}</h3>
+                        <h1 class="text-uppercase">{{::slide.title}}</h1>
+                        <h3>{{::slide.subtitle}}</h3>
                     </div>
                 </uib-slide>
             </uib-carousel>
