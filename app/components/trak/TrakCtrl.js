@@ -21,8 +21,8 @@ app.controller('TrakCtrl', function() {
             class: 'students-slide'
         },
         {
-            subtitle: 'Summarize monthly finances.',
-            class: 'finance-slide'
+            subtitle: 'Generate and print client invoices.',
+            class: 'invoice-slide'
         },
         {
             subtitle: 'Keep track of client payment schedules.',

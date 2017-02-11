@@ -11,11 +11,11 @@
 }
 
 #trak .home-slide {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url('../img/trak/trak_home.png');
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url('../img/trak/trak_preview.png');
 }
 
-#trak .finance-slide {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url('../img/trak/trak_finance.png');
+#trak .invoice-slide {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url('../img/trak/trak_invoice.png');
 }
 
 #trak .track-slide {
