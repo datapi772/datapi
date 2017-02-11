@@ -44,30 +44,35 @@ app.controller("HomeCtrl", function(MAP_URL, $http, $location, $window, $scope, 
     vm.numLocations = 0;
 
     vm.slides = [{
-        title: 'Up to 2 FREE trial sessions!',
+        title: 'Up to 2 FREE trial class sessions!',
         subtitle: 'Quality tutoring services for Grades K through 1st year undergrad.',
         class: 'tutoring-slide',
         url: 'tutoring'
     }, {
         title: 'Try it now for free!',
-        subtitle: 'Litmaster\'s interactive exercises app will help you master poetry efficiently.',
+        subtitle: 'Litmaster\'s interactive web app will help you master poetry quickly.',
         class: 'litmaster-slide',
         url: 'litmaster'
     }, {
-        title: 'Boostik Worksheets',
-        subtitle: 'Highly specialized educational resources to enhance student learning.',
+        title: 'Experience Boostik worksheet app!',
+        subtitle: 'Be well-prepped for a STEM career.',
         class: 'boostik-slide',
         url: 'boostik'
     }, {
-        title: 'Hubble',
-        subtitle: 'Integration of essential tutoring resources since 2000 through a custom tailored app for the 21st-century tutor.',
+        title: 'Access Hubble for hard-to-find comparable resources!',
+        subtitle: 'Get the best notes and practices from quizzes & exams instantaneously.',
         class: 'hubble-slide',
         url: 'hubble'
     }, {
-        title: 'TRAK',
-        subtitle: 'The ultimate Customer Relationship Management (CRM) software for the tutoring industry.',
+        title: 'Give your afterschool services the 21st century support!',
+        subtitle: 'Automate your admin needs with TRAK.',
         class: 'trak-slide',
         url: 'trak'
+    }, {
+        title: 'Leverage DataPi\'s team of marketers, trains, and apps.',
+        subtitle: 'DataPi accepts investments and business partners to grow its business worldwide.',
+        class: 'partnership-slide',
+        url: 'partner' 
     }];
 
     vm.goTo = function(path) {
