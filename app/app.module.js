@@ -16,6 +16,7 @@ var app = angular.module("datapi", [
     'AboutCtrl', 
     'HubbleCtrl',
     'TrakCtrl',
+    'PartnerCtrl',
 ]);
 
 app.constant("TODAY", new Date());

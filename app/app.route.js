@@ -56,6 +56,12 @@ app.config(function($routeProvider, $locationProvider, $translateProvider) {
         controllerAs: 'vm'
     })
 
+    .when('/partner', {
+        templateUrl: 'components/partner/Partner.html',
+        controller: 'PartnerCtrl',
+        controllerAs: 'vm'
+    })
+
     .when('/404', {
         templateUrl: 'components/error/404.html'
     });

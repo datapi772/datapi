@@ -1,0 +1,36 @@
+@media (max-width: 496px) {
+    #partner .img-block img {
+        width: 50% !important;
+    }
+}
+
+@media (max-width: 992px) {
+    #partner .img-block img {
+        width: 50%;
+        height: auto !important;
+    }
+}
+
+#partner .banner-container {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url("../img/partnership_banner.jpg");
+    background-size: cover, cover;
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, 50% 75%;
+}
+
+#partner section:nth-of-type(2) h3 {
+    animation: fade-in 500ms ease-out 1s both;
+}
+
+#partner .img-block img {
+    animation: fade-in 500ms ease-out 1.3s both;
+}
+
+#partner .img-block h4,
+#partner .img-block p {
+    animation: fade-in 500ms ease-out 1.5s both;
+}
+
+#partner section:nth-of-type(4) h3 {
+    animation: fade-in 500ms ease-out 1.8s both;
+}
