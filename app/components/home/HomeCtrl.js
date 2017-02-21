@@ -69,7 +69,7 @@ app.controller("HomeCtrl", function(MAP_URL, $http, $location, $window, $scope, 
         class: 'trak-slide',
         url: 'trak'
     }, {
-        title: 'Leverage DataPi\'s team of marketers, trains, and apps.',
+        title: 'Leverage DataPi\'s team of marketers, trainers, and apps.',
         subtitle: 'DataPi accepts investments and business partners to grow its business worldwide.',
         class: 'partnership-slide',
         url: 'partner' 
