@@ -55,7 +55,7 @@
         padding: 0;
     }
     body>div[ng-view] {
-        margin-top: 5em !important;
+        margin-top: 11rem !important;
     }
     .section-container h3 {
         font-size: 1.2em;

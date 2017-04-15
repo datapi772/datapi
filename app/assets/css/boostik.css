@@ -12,6 +12,9 @@
         width: 40% !important;
         margin: 0.5em 0 1em 0;
     }
+    #boostik .banner-container img {
+        height: 6rem !important;
+    }
 }
 
 @media (max-width: 786px) {
@@ -38,6 +41,13 @@
     background-size: cover, cover;
     background-repeat: no-repeat, no-repeat;
     background-position: center, top;
+    align-items: center;
+    justify-content: center;
+}
+
+#boostik .banner-container img {
+    height: 8rem;
+    width: auto;
 }
 
 #boostik .video-overlay {
