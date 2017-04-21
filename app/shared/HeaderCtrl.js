@@ -1,6 +1,6 @@
 var app = angular.module("HeaderCtrl", []);
 
-app.controller("HeaderCtrl", function ($translate) {
+app.controller("HeaderCtrl", function ($translate, $location, $rootScope) {
 
     var hm = this;
     hm.isCollapsed = true;
@@ -8,7 +8,6 @@ app.controller("HeaderCtrl", function ($translate) {
     hm.isOpen = false;
     hm.isOpen1 = false;
     hm.isOpen2 = false;
-    hm.currentLanguage = "Eng";
 
     hm.languages = [
         {
@@ -26,8 +25,11 @@ app.controller("HeaderCtrl", function ($translate) {
     ]
 
     hm.changeLanguage = function (lang) {
-        hm.currentLanguage = lang.lang;
+        $rootScope.currentLanguage = lang.locale;
         $translate.use(lang.locale);
+        if ($location.path() !== '/tutoring') {
+            $location.path('tutoring');
+        }
     }
 
 })

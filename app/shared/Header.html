@@ -11,7 +11,7 @@
             <a href="/"><img class="navbar-logo" src="assets/img/logo.png"></a>
             <ul class="nav navbar-nav navbar-right" id="languages">
                 <div id="languages-dropdown" class="hidden-lg hidden-md hidden-sm" uib-dropdown is-open="hm.isOpen3" keyboard-nav>
-                    <button class="btn btn-default" uib-dropdown-toggle>{{hm.currentLanguage}} <i class="caret"></i></button>
+                    <button class="btn btn-default" uib-dropdown-toggle>{{currentLanguage}} <i class="caret"></i></button>
                     <ul uib-dropdown-menu role="menu">
                         <li ng-repeat="l in hm.languages"><a href="" ng-click="hm.changeLanguage(l)">{{l.lang}}</a></li>
                     </ul>
@@ -61,12 +61,12 @@
             </ul>
             <li role="menuitem" id="collapsed-languages" ng-click="hm.isCollapsed = !hm.isCollapsed">
                 <div class="btn-group btn-group-justified">
-                    <a class="btn btn-default" ng-repeat="l in hm.languages" ng-click="hm.changeLanguage(l)" ng-class="{'active': hm.currentLanguage == l.lang}">{{l.lang}}</a>
+                    <a class="btn btn-default" ng-repeat="l in hm.languages" ng-click="hm.changeLanguage(l)" ng-class="{'active': currentLanguage == l.locale}">{{l.lang}}</a>
                 </div>
             </li>
         </ul>
         <ul class="nav navbar-nav navbar-right" id="languages-list">
-            <li ng-repeat="l in hm.languages"><a href="" ng-click="hm.changeLanguage(l)" ng-class="{'active': hm.currentLanguage == l.lang}">{{l.lang}}</a></li>
+            <li ng-repeat="l in hm.languages"><a href="" ng-click="hm.changeLanguage(l)" ng-class="{'active': currentLanguage == l.locale}">{{l.lang}}</a></li>
             <li class="phone">
                 <a href="tel:+16047070357">(604) 707-0357</a>
             </li>
