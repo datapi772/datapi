@@ -17,7 +17,15 @@ app.controller('HubbleCtrl', function() {
         },
         {
             subtitle: '',
+            class: 'browse-slide'
+        },
+        {
+            subtitle: '',
             class: 'search-slide'
+        },
+        {
+            subtitle: '',
+            class: 'builder-slide'
         }
     ]
 
