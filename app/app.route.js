@@ -32,6 +32,10 @@ app.config(function($routeProvider, $locationProvider, $translateProvider) {
         templateUrl: 'components/tutoring/Tutoring.html'
     })
 
+    .when('/apps', {
+        templateUrl: 'components/apps/Apps.html'
+    })
+
     .when('/litmaster', {
         templateUrl: 'components/litmaster/Litmaster.html',
         controller: 'LitmasterCtrl',
@@ -76,6 +80,6 @@ app.config(function($routeProvider, $locationProvider, $translateProvider) {
 
     $routeProvider.otherwise({redirectTo: '/404'})
 
-    $locationProvider.html5Mode(true);
+    $locationProvider.html5Mode(false);
 
 })
