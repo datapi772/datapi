@@ -40,29 +40,8 @@
                 </a>
             </li>
             <ul class="collapsed-menu" uib-collapse="hm.isCollapsed2">
-                <li>
-                    <a href="/tutoring" ng-click="hm.isCollapsed = !hm.isCollapsed">Tutoring</a>
-                </li>
-                <li>
-                    <a href="/apps" ng-click="hm.isCollapsed = !hm.isCollapsed">Apps</a>
-                </li>
-                <li>
-                    <a href="/coding" ng-click="hm.isCollapsed = !hm.isCollapsed">Coding</a>
-                </li>
-                <li>
-                    <a href="/litmaster" ng-click="hm.isCollapsed = !hm.isCollapsed">Poetry Help</a>
-                </li>
-                <li>
-                    <a href="/boostik" ng-click="hm.isCollapsed = !hm.isCollapsed">Worksheets</a>
-                </li>
-                <li>
-                    <a href="/hubble" ng-click="hm.isCollapsed = !hm.isCollapsed">Resources</a>
-                </li>
-                <li>
-                    <a href="/trak" ng-click="hm.isCollapsed = !hm.isCollapsed">Admin</a>
-                </li>
-                <li>
-                    <a href="/partner" ng-click="hm.isCollapsed = !hm.isCollapsed">Partnership</a>
+                <li ng-repeat="s in hm.services">
+                    <a ng-href="{{ s.url }}" ng-click="hm.isCollapsed = !hm.isCollapsed">{{ s.title }}</a>
                 </li>
             </ul>
             <li role="menuitem" id="collapsed-languages" ng-click="hm.isCollapsed = !hm.isCollapsed">
@@ -97,29 +76,8 @@
                     <span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu" uib-dropdown-menu>
-                    <li>
-                        <a href="/tutoring">Tutoring</a>
-                    </li>
-                    <li>
-                        <a href="/apps">Apps</a>
-                    </li>
-                    <li>
-                        <a href="/coding">Coding</a>
-                    </li>
-                    <li>
-                        <a href="/litmaster">Poetry Help</a>
-                    </li>
-                    <li>
-                        <a href="/boostik">Worksheets</a>
-                    </li>
-                    <li>
-                        <a href="/hubble">Resources</a>
-                    </li>
-                    <li>
-                        <a href="/trak">Admin</a>
-                    </li>
-                    <li>
-                        <a href="/partner">Partnership</a>
+                    <li ng-repeat="s in hm.services">
+                        <a ng-href="{{ s.url }}">{{ s.title }}</a>
                     </li>
                 </ul>
             </li>

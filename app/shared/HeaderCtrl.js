@@ -1,6 +1,6 @@
 var app = angular.module("HeaderCtrl", []);
 
-app.controller("HeaderCtrl", function ($translate, $location, $rootScope) {
+app.controller("HeaderCtrl", function (FULL_MODE, $translate, $location, $rootScope) {
 
     var hm = this;
     hm.isCollapsed = true;
@@ -31,5 +31,13 @@ app.controller("HeaderCtrl", function ($translate, $location, $rootScope) {
             $location.path('tutoring');
         }
     }
+
+    hm.services = [{ url: '/tutoring', title: 'Tutoring'}].concat(FULL_MODE ? [
+        { url: '/litmaster', title: 'Poetry Help' },
+        { url: '/boostik', title: 'Worksheets' },
+        { url: '/hubble', title: 'Resources' },
+        { url : '/trak', title: 'Admin' },
+        { url: '/partner', title: 'Partnership' }
+    ] : [ { url: '/apps', title: 'Apps' } ]);
 
 })

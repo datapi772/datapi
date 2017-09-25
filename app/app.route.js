@@ -2,6 +2,12 @@ var app = angular.module("datapi");
 
 app.config(function($routeProvider, $locationProvider, $translateProvider) {
 
+    var _notFull = function(FULL_MODE, $location) {
+        if (!FULL_MODE) {
+            $location.path('/');
+        }
+    };
+
     $routeProvider
 
     .when('/', {
@@ -39,31 +45,46 @@ app.config(function($routeProvider, $locationProvider, $translateProvider) {
     .when('/litmaster', {
         templateUrl: 'components/litmaster/Litmaster.html',
         controller: 'LitmasterCtrl',
-        controllerAs: 'vm'
+        controllerAs: 'vm',
+        resolve: {
+            "notFull": _notFull
+        }
     })
 
     .when('/boostik', {
         templateUrl: 'components/boostik/Boostik.html',
         controller: 'BoostikCtrl',
-        controllerAs: 'vm'
+        controllerAs: 'vm',
+        resolve: {
+            "notFull": _notFull
+        }
     })
 
     .when('/hubble', {
         templateUrl: 'components/hubble/Hubble.html',
         controller: 'HubbleCtrl',
-        controllerAs: 'vm'
+        controllerAs: 'vm',
+        resolve: {
+            "notFull": _notFull
+        }
     })
 
     .when('/trak', {
         templateUrl: 'components/trak/Trak.html',
         controller: 'TrakCtrl',
-        controllerAs: 'vm'
+        controllerAs: 'vm',
+        resolve: {
+            "notFull": _notFull
+        }
     })
 
     .when('/partner', {
         templateUrl: 'components/partner/Partner.html',
         controller: 'PartnerCtrl',
-        controllerAs: 'vm'
+        controllerAs: 'vm',
+        resolve: {
+            "notFull": _notFull
+        }
     })
 
     .when('/404', {
@@ -78,7 +99,7 @@ app.config(function($routeProvider, $locationProvider, $translateProvider) {
     $translateProvider.preferredLanguage('en');
     $translateProvider.useSanitizeValueStrategy('escape');
 
-    $routeProvider.otherwise({redirectTo: '/404'})
+    $routeProvider.otherwise({redirectTo: '/'})
 
     $locationProvider.html5Mode(true);
 

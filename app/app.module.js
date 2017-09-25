@@ -21,6 +21,7 @@ var app = angular.module("datapi", [
 
 app.constant("TODAY", new Date());
 app.constant("MAP_URL", "https://maps.googleapis.com/maps/api/js?key=AIzaSyA8mvlJG0df5cnDtEKLlpzXszCOtFc5ftM");
+app.constant("FULL_MODE", window.location.hostname === 'coop.datapi.com');
 
 app.run(function($rootScope, $translate) {
     $rootScope.$on('$routeChangeSuccess', function(ev, current, prev) {

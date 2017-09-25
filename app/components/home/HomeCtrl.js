@@ -1,6 +1,6 @@
 var app = angular.module("HomeCtrl", []);
 
-app.controller("HomeCtrl", function(MAP_URL, $http, $location, $window, $scope, NgMap) {
+app.controller("HomeCtrl", function(MAP_URL, FULL_MODE, $http, $location, $window, $scope, NgMap) {
 
     var vm = this;
     var lastIndex = 0;
@@ -48,11 +48,7 @@ app.controller("HomeCtrl", function(MAP_URL, $http, $location, $window, $scope, 
         subtitle: 'Quality tutoring services for Grades K through 1st year undergrad.',
         class: 'tutoring-slide',
         url: 'tutoring'
-    }, {
-        title: 'We build quality apps to facilitate student learning.',
-        class: 'apps-slide',
-        url: 'apps'
-    }, {
+    }].concat(FULL_MODE ? [{
         title: 'Try it now for free!',
         subtitle: 'Litmaster\'s interactive web app will help you master poetry quickly.',
         class: 'litmaster-slide',
@@ -77,7 +73,11 @@ app.controller("HomeCtrl", function(MAP_URL, $http, $location, $window, $scope, 
         subtitle: 'DataPi accepts investments and business partners to grow its business worldwide.',
         class: 'partnership-slide',
         url: 'partner' 
-    }];
+    }] : [{
+        title: 'We build quality apps to facilitate student learning.',
+        class: 'apps-slide',
+        url: 'apps'
+    }]);
 
     vm.goTo = function(path) {
         $location.path(path)
