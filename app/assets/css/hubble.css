@@ -3,18 +3,10 @@
     background-position: top;
 }
 
-#hubble .home-slide {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.6) 100%), url('../img/hubble/home.png');
+#hubble section:nth-of-type(2) h4 {
+    animation: fade-in 500ms ease-out 1.5s both;
 }
 
-#hubble .browse-slide {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.6) 100%), url('../img/hubble/browse.png');
-}
-
-#hubble .search-slide {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.6) 100%), url('../img/hubble/search.png');
-}
-
-#hubble .builder-slide {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.6) 100%), url('../img/hubble/builder.png');
+#hubble section:nth-of-type(3) h4 {
+    animation: fade-in 500ms ease-out 1.8s both;
 }

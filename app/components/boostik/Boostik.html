@@ -45,16 +45,4 @@
             </div>
         </div>
     </section>
-    <section class="section-container" id="worksheets">
-        <div class="preview-slides" ng-swipe-left="vm.nextSlide()" ng-swipe-right="vm.prevSlide()">
-            <button class="slides-nav" ng-click="vm.prevSlide()"><i class="glyphicon glyphicon-chevron-left"></i></button>
-            <img draggable="false" ng-src="{{p}}" ng-repeat="p in vm.activeSlides" ng-click="vm.previewModal(p)">
-            <button class="slides-nav" ng-click="vm.nextSlide()"><i class="glyphicon glyphicon-chevron-right"></i></button>
-        </div>
-    </section>
 </div>
-<script type="text/ng-template" id="worksheetModal.html">
-    <div class="modal-body" id="worksheet-preview">
-        <img ng-src="{{img}}" alt="">
-    </div>
-</script>

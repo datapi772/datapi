@@ -25,3 +25,11 @@
 #trak .students-slide {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url('../img/trak/trak_students.png');
 }
+
+#trak section:nth-of-type(2) h3 {
+    animation: fade-in 500ms ease-out 1.5s both;
+}
+
+#trak section:nth-of-type(3) h4 {
+    animation: fade-in 500ms ease-out 1.8s both;
+}
