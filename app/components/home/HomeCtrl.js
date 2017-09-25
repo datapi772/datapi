@@ -49,6 +49,10 @@ app.controller("HomeCtrl", function(MAP_URL, $http, $location, $window, $scope, 
         class: 'tutoring-slide',
         url: 'tutoring'
     }, {
+        title: 'We build quality apps to facilitate student learning.',
+        class: 'apps-slide',
+        url: 'apps'
+    }, {
         title: 'Try it now for free!',
         subtitle: 'Litmaster\'s interactive web app will help you master poetry quickly.',
         class: 'litmaster-slide',

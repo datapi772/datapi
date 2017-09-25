@@ -43,6 +43,9 @@
     .slide-img.tutoring-slide {
         background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url('../img/tutoring_banner_sm.jpg') !important;
     }
+    .slide-img.apps-slide {
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url('../img/apps_banner_sm.jpg') !important;
+    }
     .slide-img.boostik-slide {
         background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url('../img/boostik_banner_sm.jpg') !important;
     }
@@ -122,6 +125,10 @@
 
 .tutoring-slide {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url('../img/tutoring_banner.jpg');
+}
+
+.apps-slide {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url('../img/apps_banner.jpg');
 }
 
 .litmaster-slide {

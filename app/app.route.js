@@ -80,6 +80,6 @@ app.config(function($routeProvider, $locationProvider, $translateProvider) {
 
     $routeProvider.otherwise({redirectTo: '/404'})
 
-    $locationProvider.html5Mode(false);
+    $locationProvider.html5Mode(true);
 
 })

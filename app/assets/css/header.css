@@ -122,6 +122,7 @@
 
 .navbar #services-dropdown .dropdown-menu {
     background-color: #137cbf;
+    border: 0;
 }
 
 .navbar #services-dropdown .dropdown-menu li a {
