@@ -13,7 +13,7 @@ var app = angular.module("datapi", [
     'CareersCtrl', 
     'LitmasterCtrl', 
     'BoostikCtrl', 
-    'AboutCtrl', 
+    'TutoringCtrl', 
     'HubbleCtrl',
     'TrakCtrl',
     'PartnerCtrl',

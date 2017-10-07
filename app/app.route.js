@@ -17,9 +17,7 @@ app.config(function($routeProvider, $locationProvider, $translateProvider) {
     })
 
     .when('/about', {
-        templateUrl: 'components/about/About.html',
-        controller: 'AboutCtrl',
-        controllerAs: 'vm'
+        templateUrl: 'components/about/About.html'
     })
 
     .when('/careers', {
@@ -35,7 +33,9 @@ app.config(function($routeProvider, $locationProvider, $translateProvider) {
     })
 
     .when('/tutoring', {
-        templateUrl: 'components/tutoring/Tutoring.html'
+        templateUrl: 'components/tutoring/Tutoring.html',
+        controller: 'TutoringCtrl',
+        controllerAs: 'vm'
     })
 
     .when('/apps', {
