@@ -39,26 +39,18 @@
     animation: fade-in 500ms ease-out 1.5s both;
 }
 
-#tutoring section:nth-of-type(3) .img-block img {
+#tutoring section:nth-of-type(3) h2 {
     animation: fade-in 500ms ease-out 1.8s both;
 }
 
-#tutoring section:nth-of-type(3) .img-block p {
+#tutoring section:nth-of-type(4) .img-block img {
     animation: fade-in 500ms ease-out 2.1s both;
 }
 
-#tutoring section:nth-of-type(4) h2 {
+#tutoring section:nth-of-type(4) .img-block p {
     animation: fade-in 500ms ease-out 2.4s both;
 }
 
-#tutoring section:nth-of-type(4) h5 {
-    animation: fade-in 500ms ease-out 2.7s both;
-}
-
-#tutoring section:nth-of-type(4) h4 {
-    animation: fade-in 500ms ease-out 3s both;
-}
-
 #tutoring section:nth-of-type(5) h3 {
-    animation: fade-in 500ms ease-out 3.3s both;
+    animation: fade-in 500ms ease-out 2.7s both;
 }
