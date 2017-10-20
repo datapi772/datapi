@@ -17,7 +17,7 @@
     content: " ";
     position: absolute;
     top: 0;
-    width: 50%;
+    width: 51%;
     height: 100%;
     background: #f5f5f5;
     z-index: 201;
@@ -28,11 +28,26 @@
     content: " ";
     position: absolute;
     top: 0;
-    width: 50%;
+    width: 51%;
     height: 100%;
     background: #f5f5f5;
     z-index: 201;
     animation: reveal-right 2s ease-out 1s both;
+}
+
+.container-blue {
+    color: white;
+    padding: 4em 8em;
+}
+
+.container-blue h3 {
+    margin-top: 10px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.container-blue li h4 {
+    padding-left: 10px;
 }
 
 #tutoring section:nth-of-type(2) h3 {

@@ -3,7 +3,7 @@
         <h1 class="text-uppercase">Tutoring</h1>
     </section>
     <section class="section-container text-center">
-        <h3>Need help with Math, English, Sciences, Social Studies, or French?</h3>
+        <h3>{{ 'TUTORING_HEAD' | translate }}</h3>
         <div class="video-frame">
             <div class="video-overlay" ng-hide="vm.hideOverlay" ng-click="vm.scrolltoVideo()"></div>
             <iframe src="https://www.youtube.com/embed/ZgQ2ib7iUE4?autoplay=1" frameborder="0" allowfullscreen align="middle" ng-if="vm.hideOverlay"></iframe>
@@ -11,8 +11,8 @@
     </section>
     <section class="container-fluid container-green">
         <div class="info-container text-center">
-            <h2>Get up to 2 free trial sessions!</h2>
-            <h2>SEEING IS BELIEVING</h2>
+            <h2>{{ 'TUTORING_TRIAL' | translate }}</h2>
+            <h2>{{ 'TUTORING_SLOGAN' | translate }}</h2>
         </div>
     </section>
     <section class="container-fluid container-orange">
@@ -21,24 +21,38 @@
                 <div class="col-sm-4">
                     <div class="img-block">
                         <img src="assets/img/tutoring_tutoring.png" alt="">
-                        <p>Tutoring services for grades K to 1st year undergrad with access to highly trained tutors, laptops, DataPi's custom-tailored tutoring apps, and quality educational resources.</p>
+                        <p>{{ 'TUTORING_BLOCK_1' | translate }}</p>
                     </div>
                 </div>
                 <div class="col-sm-4">
                     <div class="img-block">
                         <img src="assets/img/tutoring_pricing.png" alt="">
-                        <p>Flexible pricing options for different group sizes. Save by learning with friends or siblings.</p>
+                        <p>{{ 'TUTORING_BLOCK_2' | translate }}</p>
                     </div>
                 </div>
                 <div class="col-sm-4">
                     <div class="img-block">
                         <img src="assets/img/tutoring_visit.png" alt="">
-                        <p>In-centre and on-site visits (home, library, or community centre).</p>
+                        <p>{{ 'TUTORING_BLOCK_3' | translate }}</p>
                     </div>
                 </div>
             </div>
     </section>
+    <section class="container-fluid container-blue">
+        <div class="row">
+            <div class="col-sm-6 col-sm-offset-3">
+                <h3>{{ 'TUTORING_BENE' | translate }}</h3>
+                <ul>
+                    <li><h4>{{ 'TUTORING_BENE_1' | translate }}</h4></li>
+                    <li><h4>{{ 'TUTORING_BENE_2' | translate }}</h4></li>
+                    <li><h4>{{ 'TUTORING_BENE_3' | translate }}</h4></li>
+                    <li><h4>{{ 'TUTORING_BENE_4' | translate }}</h4></li>
+                </ul>
+            </div>
+        </div>
+    </section>
     <section class="section-container text-center">
-        <h3>See for yourself what makes students thrive at DataPi. Call us for up to two free trial sessions.</h3>
+        <h3>{{ 'TUTORING_FOOT_1' | translate }}</h3>
+        <h3>{{ 'TUTORING_FOOT_2' | translate }}</h3>
     </section>
     </div>

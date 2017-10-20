@@ -43,6 +43,7 @@
     }
     .profiles img {
         width: 30% !important;
+        height: auto !important;
     }
     .img-block {
         margin-top: 3em;
@@ -86,7 +87,8 @@
         padding: 0em !important;
     }
     .img-block img {
-        height: 10% !important;
+        height: auto !important;
+        width: 60%;
     }
 }
 
