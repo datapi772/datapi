@@ -38,6 +38,17 @@
     background-position: center, 0% 40%;
 }
 
+.container-green {
+    display: flex;
+    justify-content: center;
+    color: white;
+    flex-flow: row wrap;
+}
+
+.container-green .phone {
+    margin: 1rem 3rem;
+}
+
 #contact .locations .location-text {
     margin-bottom: 1em;
     margin-top: 0em;
@@ -161,14 +172,18 @@
     animation: fade-in-pulse 800ms ease-out both;
 }
 
-#contact .locations {
-    animation: fade-in 500ms ease-out 1s both;
-}
-
-#contact .locations .slides-nav {
+#contact section:nth-of-type(2) {
     animation: fade-in 500ms ease-out 1.3s both;
 }
 
+#contact .locations {
+    animation: fade-in 500ms ease-out 1.6s both;
+}
+
+#contact .locations .slides-nav {
+    animation: fade-in 500ms ease-out 1.9s both;
+}
+
 #contact #maps {
-    animation: fade-in 500ms ease-out 1.4s both;
+    animation: fade-in 500ms ease-out 2.1s both;
 }

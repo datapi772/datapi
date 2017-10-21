@@ -2,6 +2,11 @@
     <section class="banner-container">
         <h1 class="text-uppercase">Contact Us</h1>
     </section>
+    <section class="container-green">
+        <h4 class="phone">English (604) 707-0357</h4>
+        <h4 class="phone">中文 (604) 418-8347</h4>
+        <h4 class="phone">Tiếng Việt (604) 366-8289</h4>
+    </section>
     <section class="section-container">
         <div class="locations" ng-swipe-left="vm.nextSlide()" ng-swipe-right="vm.prevSlide()">
             <button class="slides-nav" ng-click="vm.prevSlide()" ng-class="{'hide-nav-btn': vm.numLocations >= vm.locations.length}"><i class="glyphicon glyphicon-chevron-left"></i></button>
@@ -12,8 +17,7 @@
                 <h5>{{l.phone}}</h5>
                 <h5>{{l.email}}</h5>
                 <h5 class="padding-top">{{'MON_TO_THURS' | translate}}: {{l.hoursMT}}</h5>
-                <h5>{{'SATURDAY' | translate}}: {{l.hoursSa}}</h5>
-                <h5>{{'SUNDAY' | translate}}: {{l.hoursSu}}</h5>
+                <h5>{{'SAT_SUN' | translate}}: {{l.hoursSS}}</h5>
             </div>
             <button class="slides-nav" ng-click="vm.nextSlide()" ng-class="{'hide-nav-btn': vm.numLocations >= vm.locations.length}"><i class="glyphicon glyphicon-chevron-right"></i></button>
         </div>
