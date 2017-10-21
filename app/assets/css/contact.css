@@ -38,14 +38,14 @@
     background-position: center, 0% 40%;
 }
 
-.container-green {
+#contact .container-green {
     display: flex;
     justify-content: center;
     color: white;
     flex-flow: row wrap;
 }
 
-.container-green .phone {
+#contact .container-green .phone {
     margin: 1rem 3rem;
 }
 

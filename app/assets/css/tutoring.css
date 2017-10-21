@@ -35,18 +35,18 @@
     animation: reveal-right 2s ease-out 1s both;
 }
 
-.container-blue {
+#tutoring .container-blue {
     color: white;
     padding: 4em 8em;
 }
 
-.container-blue h3 {
+#tutoring .container-blue h3 {
     margin-top: 10px;
     padding-bottom: 20px;
     text-align: center;
 }
 
-.container-blue li h4 {
+#tutoring .container-blue li h4 {
     padding-left: 10px;
 }
 
