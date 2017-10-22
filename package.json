@@ -11,7 +11,7 @@
   "scripts": {
     "postinstall": "bower install",
     "prestart": "npm install --no-optional",
-    "start": "http-server app/ -a localhost -p 8000 -c-1 -o",
-    "launch": "http-server app/ -a localhost -p 8000 -c-1 -o"
+    "start": "http-server -a localhost -p 8000 -c-1 -o",
+    "launch": "http-server -a localhost -p 8000 -c-1 -o"
   }
 }
