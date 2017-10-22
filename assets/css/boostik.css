@@ -37,7 +37,7 @@
 }
 
 #boostik .banner-container {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url("../img/boostik_banner_2.jpg");
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url("assets/img/boostik_banner_2.jpg");
     background-size: cover, cover;
     background-repeat: no-repeat, no-repeat;
     background-position: center, top;
@@ -51,7 +51,7 @@
 }
 
 #boostik .video-overlay {
-    background-image: url("../img/play_button_sm.png"), linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url("../img/boostik_video.jpg");
+    background-image: url("assets/img/play_button_sm.png"), linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url("assets/img/boostik_video.jpg");
 }
 
 #boostik .preview-slides {

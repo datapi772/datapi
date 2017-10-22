@@ -17,7 +17,7 @@
 @media (max-width: 992px) {}
 
 #litmaster .banner-container {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url("../img/litmaster_banner_5.jpg");
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url("assets/img/litmaster_banner_5.jpg");
     background-size: cover, cover;
     background-repeat: no-repeat, no-repeat;
     background-position: center, 50% 75%;
@@ -55,7 +55,7 @@
 }
 
 #litmaster .video-overlay {
-    background-image: url("../img/play_button_sm.png"), linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url("../img/litmaster_video.jpg");
+    background-image: url("asset/img/play_button_sm.png"), linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url("assets/img/litmaster_video.jpg");
 }
 
 

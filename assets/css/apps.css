@@ -1,5 +1,5 @@
 #apps .banner-container {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url("../img/apps_banner_2.jpg");
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url("assets/img/apps_banner_2.jpg");
     background-size: cover, cover;
     background-repeat: no-repeat, no-repeat;
     background-position: center, 50% 30%;

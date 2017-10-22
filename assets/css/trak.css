@@ -1,5 +1,5 @@
 #trak .banner-container {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url("../img/trak_banner_2.jpg");
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url("assets/img/trak_banner_2.jpg");
     background-size: cover, cover;
     background-repeat: no-repeat, no-repeat;
     background-position: center, 50% 75%;   
@@ -11,19 +11,19 @@
 }
 
 #trak .home-slide {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url('../img/trak/trak_preview.png');
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url('assets/img/trak/trak_preview.png');
 }
 
 #trak .invoice-slide {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url('../img/trak/trak_invoice.png');
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url('assets/img/trak/trak_invoice.png');
 }
 
 #trak .track-slide {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url('../img/trak/trak_track.png');
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url('assets/img/trak/trak_track.png');
 }
 
 #trak .students-slide {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url('../img/trak/trak_students.png');
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url('assets/img/trak/trak_students.png');
 }
 
 #trak section:nth-of-type(2) h3 {

@@ -41,22 +41,22 @@
         font-size: 18px !important;
     }
     .slide-img.tutoring-slide {
-        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url('../img/tutoring_banner_sm.jpg') !important;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url('assets/img/tutoring_banner_sm.jpg') !important;
     }
     .slide-img.apps-slide {
-        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url('../img/apps_banner_sm.jpg') !important;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url('assets/img/apps_banner_sm.jpg') !important;
     }
     .slide-img.boostik-slide {
-        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url('../img/boostik_banner_sm.jpg') !important;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url('assets/img/boostik_banner_sm.jpg') !important;
     }
     .slide-img.hubble-slide {
-        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url('../img/hubble_banner_sm.jpg') !important;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url('assets/img/hubble_banner_sm.jpg') !important;
     }
     .slide-img.trak-slide {
-        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url('../img/trak_banner_sm.jpg') !important;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url('assets/img/trak_banner_sm.jpg') !important;
     }
     .slide-img.partnership-slide {
-        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url('../img/partnership_banner_sm.png') !important;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url('assets/img/partnership_banner_sm.png') !important;
     }
     #home #home-contact ng-map {
         height: 30em !important;
@@ -84,10 +84,10 @@
         height: 30em !important;
     }
     .tutoring-slide {
-        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url('../img/tutoring_banner_md.jpg') !important;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url('assets/img/tutoring_banner_md.jpg') !important;
     }
     .boostik-slide {
-        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url('../img/boostik_banner_md.jpg') !important;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url('assets/img/boostik_banner_md.jpg') !important;
     }
     .carousel-caption h1 {
         font-size: 35px !important;
@@ -124,31 +124,31 @@
 }
 
 .tutoring-slide {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url('../img/tutoring_banner.jpg');
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url('assets/img/tutoring_banner.jpg');
 }
 
 .apps-slide {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url('../img/apps_banner.jpg');
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url('assets/img/apps_banner.jpg');
 }
 
 .litmaster-slide {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url('../img/litmaster_banner.jpg');
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url('assets/img/litmaster_banner.jpg');
 }
 
 .boostik-slide {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url('../img/boostik_banner.jpg');
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url('assets/img/boostik_banner.jpg');
 }
 
 .hubble-slide {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url('../img/hubble_banner.jpg');
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url('assets/img/hubble_banner.jpg');
 }
 
 .trak-slide {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url('../img/trak_banner.jpg') !important;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url('assets/img/trak_banner.jpg') !important;
 }
 
 .partnership-slide {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url('../img/partnership_banner.png') !important;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url('assets/img/partnership_banner.png') !important;
 }
 
 .carousel-container {
@@ -250,19 +250,19 @@
 }
 
 #home #about .corner:nth-of-type(1):before {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url('../img/home_about_1.jpg');
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url('assets/img/home_about_1.jpg');
 }
 
 #home #about .corner:nth-of-type(2):before {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url('../img/home_about_2.jpg');
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url('assets/img/home_about_2.jpg');
 }
 
 #home #about .corner:nth-of-type(3):before {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url('../img/home_about_3.jpg');
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url('assets/img/home_about_3.jpg');
 }
 
 #home #about .corner:nth-of-type(4):before {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url('../img/home_about_4.jpg');
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url('assets/img/home_about_4.jpg');
 }
 
 #home #about .corner:hover:before {
