@@ -1,0 +1,36 @@
+@media (max-width: 496px) {
+    #coding .img-block img {
+        width: 50% !important;
+    }
+}
+
+@media (max-width: 992px) {
+    #coding .img-block img {
+        width: 50%;
+        height: auto !important;
+    }
+}
+
+#coding .banner-container {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url("assets/img/coding_banner.jpg");
+    background-size: cover, cover;
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, 50% 75%;
+}
+
+#coding section:nth-of-type(2) h3 {
+    animation: fade-in 500ms ease-out 1s both;
+}
+
+#coding section:nth-of-type(3) h3 {
+    animation: fade-in 500ms ease-out 1.3s both;
+}
+
+#coding .img-block img {
+    animation: fade-in 500ms ease-out 1.6s both;
+}
+
+#coding .img-block h4,
+#coding .img-block p {
+    animation: fade-in 500ms ease-out 1.8s both;
+}

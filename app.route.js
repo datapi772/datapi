@@ -87,6 +87,14 @@ app.config(function($routeProvider, $locationProvider, $translateProvider) {
         }
     })
 
+    .when('/coding', {
+        templateUrl: 'components/coding/Coding.html'
+    })
+
+    .when('/daycamp', {
+        templateUrl: 'components/daycamp/Daycamp.html'
+    })
+
     .when('/404', {
         templateUrl: 'components/error/404.html'
     });

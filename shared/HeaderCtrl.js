@@ -38,6 +38,10 @@ app.controller("HeaderCtrl", function (FULL_MODE, $translate, $location, $rootSc
         { url: '/hubble', title: 'Resources' },
         { url : '/trak', title: 'Admin' },
         { url: '/partner', title: 'Partnership' }
-    ] : [ { url: '/apps', title: 'Apps' } ]);
+    ] : [ 
+        { url: '/coding', title: 'Coding' },
+        { url: '/daycamp', title: 'Day Camp' },  
+        { url: '/apps', title: 'Apps' } 
+    ]);
 
 })
