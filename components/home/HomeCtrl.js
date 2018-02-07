@@ -44,7 +44,7 @@ app.controller("HomeCtrl", function(MAP_URL, FULL_MODE, $http, $location, $windo
     vm.numLocations = 0;
 
     vm.slides = [{
-        title: 'Up to 2 FREE trial class sessions!',
+        title: 'Receive 2 FREE trial class sessions!',
         subtitle: 'Quality tutoring services for Grades K through 1st year undergrad.',
         class: 'tutoring-slide',
         url: 'tutoring'
@@ -74,7 +74,20 @@ app.controller("HomeCtrl", function(MAP_URL, FULL_MODE, $http, $location, $windo
         class: 'partnership-slide',
         url: 'partner' 
     }] : [{
-        title: 'We build quality apps to facilitate student learning.',
+        title: 'Robot-coding for children.',
+        subtitle: 'High-tech readiness for 8-13 year olds.',
+        class: 'coding-slide',
+        url: 'coding'
+    },
+    {
+        title: 'Sign up for spring break or summer camps.',
+        subtitle: 'Learn. Create. Have fun. Repeat.',
+        class: 'daycamp-slide',
+        url: 'daycamp'
+    },
+    {
+        title: 'We build dedicated apps for tutors.',
+        subtitle: 'Bridging better performances between educators and students.',
         class: 'apps-slide',
         url: 'apps'
     }]);
